@@ -1,0 +1,50 @@
+<meta charset="utf-8">
+<h1>Calcula Consumo em Função treinamento </h1>
+<h2>Luan Brito Sousa Calazans</h2>
+<h3>Treinando na Lista do Simulado<h3>
+<script>
+
+	function mensagem(texto) {
+		document.write(texto);
+	}
+	function pulalinha(argument) {
+		document.write("<br>");
+	}
+	function ConsumoCivicVersa(tanque , caminho) {
+		return caminho / tanque ; 
+	}
+
+	function GastocomGasAlcool(valorGasAlco , kmPercorrer , caminho) {
+		return valorGasAlco * kmPercorrer / caminho ;
+	}
+
+//_____________________________________CONSUMO CIVIC___________________________________________________________
+//      consumo de 13,3 litros      /      Gasolina 8 reais          /         106 reais gastos.
+
+	var tanque1 =42 ; 
+		caminho1 = 560 ;
+		ValorGas = 106 ; 
+		kmPercorrer1 = 1000;
+
+	mensagem("o consumo do Civic foi de : " + ConsumoCivicVersa(tanque1 , caminho1 ).toFixed(2) + " litros.");
+	pulalinha();
+	mensagem("O Civic gastou :"+ GastocomGasAlcool(ValorGas , kmPercorrer1 , caminho1).toFixed(2) + "$ Reais. Para andar 1000km.");
+	pulalinha();
+	pulalinha();
+
+
+//___________________________________________CONSUMO VERSA______________________________________________________
+//   CONSUMO DE 7.6 LITROS     /       ALCOOL 7 REIAS       /     53 REAIS GASTO 
+
+	var Tanque2 = 50 ; 
+		caminho2 = 380 ;
+		ValorAlcoo = 53 ;
+		kmPercorrer2 = 1000 ;
+
+	mensagem("o consumo do Versa foi de : " + ConsumoCivicVersa(Tanque2 , caminho2) + " Liros . ");
+	pulalinha();
+	mensagem("O Versa gastou :"+ GastocomGasAlcool(Tanque2 , kmPercorrer2 , caminho2 ).toFixed(2) + "$ Reais. Para andar 1000km.");
+
+
+
+</script>

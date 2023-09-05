@@ -1,0 +1,49 @@
+<meta charset="utf-8">
+<scrit>
+<h1>Questão numero 4</h1>
+<h2>Calcula Consumo em Função treinamento <h2>
+
+	<script>
+
+		function mensagem(texto) {
+			document.write(texto);
+			}
+		function pulalinha(argument) {
+			document.write("<br>");
+			}	
+		function ConsumoPuntoFocus(Caminho , tanque) {
+			return Caminho / tanque ; 
+			}
+		function GastocomGasAlcool(valorGasAlco , kmPercorrer , caminho) {
+			return valorGasAlco * kmPercorrer / caminho ;
+			}
+//________________________________________CONSUMO PUNTO___________________________________
+// Valor Gasolina= 8 reais       /    Consumo de 9.54    /    Pagou : 76,32 cents
+
+
+			var Caminho1 =  620 ; 
+				Tanque1 = 65 ;
+				valorgas = 76;
+				kmPercorrer1 = 1000 ; 
+
+		mensagem("O consumo do FIAT Punto foi de : " + ConsumoPuntoFocus(Caminho1 , Tanque1).toFixed(2) + "  L " );
+		pulalinha();
+		mensagem("O FIAT Punto gastou : "+ GastocomGasAlcool(valorgas , kmPercorrer1 , Caminho1).toFixed(2) + "$ Reais");
+		pulalinha();
+		pulalinha();
+//_____________________________________CONSUMO FORD FOCUS______________________________________
+//  VALOR ALCOOL= 7 REAIS    /         CONSUMO DE 10,67        /    Pagou : 74,2 cents 
+
+			var Caminho2 = 480 ;
+				Tanque2 = 45 ;
+				valorAlcool = 74 ; 
+				kmPercorrer2 = 1000;
+
+		mensagem("O consumo do FORD Focus foi de : " + ConsumoPuntoFocus(Caminho2, Tanque2).toFixed(2) + " L");
+		pulalinha();
+		mensagem("O FORD Focus gastou : " + GastocomGasAlcool(valorAlcool , kmPercorrer2 , Caminho2).toFixed(2) + "$ Reais.");
+		pulalinha();
+		pulalinha();
+
+		mensagem("Estou treinando no site beecrowd muito bom , muitos exercicios por lá.");
+	</script>
