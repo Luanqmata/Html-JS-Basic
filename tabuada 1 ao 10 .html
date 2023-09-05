@@ -1,0 +1,27 @@
+<meta charset="utf-8">
+<h1>tabuada numero especifico<h1>
+	<h2><h2>
+<script type="text/javascript">
+	
+	function mensagem(text) {
+		document.write(text);
+		document.write("<br>");
+	}
+	
+	function pula(linhas) {
+		for (var i = 0; i <linhas ; i++) {
+			document.write("<br>");
+		}
+	}
+	
+	function tabuada() {
+		for (var cont = 1; cont <= 10; cont++) {
+			for (var multi = 1; multi <= 10; multi++) {
+				document.write(cont + " x " + multi + " = " + cont * multi);
+				document.write("<br>");
+			}
+			pula(2);
+		}
+	}
+	tabuada();
+</script>
