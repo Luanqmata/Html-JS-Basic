@@ -1,0 +1,25 @@
+	<meta charset="utf-8">
+<h1>numeros maiores<h1>
+	<h2><H2>
+<script type="text/javascript">
+	function mensagem(text) {
+		document.write(text);
+		document.write("<br>");
+	}
+
+	function maior(n1, n2) {
+		if (n1 > n2) {
+			mensagem(n1 + " é maior.");
+		} else if (n1 == n2) {
+			mensagem(n1 + " e " + n2 + " são iguais.");
+		} else {
+			mensagem(n2 + " é maior.");
+		}
+	}
+
+	var numero = Number(prompt("Digite um número."));
+	var outronumero = Number(prompt("Insira outro número."));
+
+	maior(numero, outronumero);
+	
+</script>

@@ -1,0 +1,49 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+	
+	function mensagem(text) {
+		document.write(text);
+		document.write("<br>");
+	}
+	function pula() {
+		document.write("<br>");
+	}
+
+
+	var a = Number(prompt("Digite o valor A."));
+		b = Number(prompt("Digite o Valor B."));
+		c = Number(prompt("Digite o Valor C."));
+
+	var oredemLida = mensagem("A ordem é " + a + "," + b + "," + c);
+
+		mensagem(oredemLida);
+		pula();
+		var ordemCrescente, ordemDecrescente;
+
+        if (a <= b && a <= c) {
+            if (b <= c) {
+                ordemCrescente = mensagem("Ordem crescente: " + a + ", " + b + ", " + c);
+                ordemDecrescente = mensagem("Ordem decrescente: " + c + ", " + b + ", " + a);
+            } else {
+                ordemCrescente = mensagem("Ordem crescente: " + a + ", " + c + ", " + b);
+                ordemDecrescente = mensagem("Ordem decrescente: " + b + ", " + c + ", " + a);
+            }
+        } else if (b <= a && b <= c) {
+            if (a <= c) {
+                ordemCrescente = mensagem("Ordem crescente: " + b + ", " + a + ", " + c);
+                ordemDecrescente = mensagem("Ordem decrescente: " + c + ", " + a + ", " + b);
+            } else {
+                ordemCrescente = mensagem("Ordem crescente: " + b + ", " + c + ", " + a);
+                ordemDecrescente = mensagem("Ordem decrescente: " + a + ", " + c + ", " + b);
+            }
+        } else {
+            if (a <= b) {
+                ordemCrescente = mensagem("Ordem crescente: " + c + ", " + a + ", " + b);
+                ordemDecrescente = mensagem("Ordem decrescente: " + b + ", " + a + ", " + c);
+            } else {
+                ordemCrescente = mensagem("Ordem crescente: " + c + ", " + b + ", " + a);
+                ordemDecrescente = mensagem("Ordem decrescente: " + a + ", " + b + ", " + c);
+            }
+        }
+    </script>
+

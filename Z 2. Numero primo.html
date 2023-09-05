@@ -1,0 +1,37 @@
+<meta charset="utf-8">
+<h1>NUMERO PRIMO<h1>
+	<h2><h2>
+<script type="text/javascript">
+	
+				function mensagem(text) {
+				document.write(text);
+		}
+				function pula(linha) {
+				for (var i = 0; i <linha; i++) {
+				return document.write("<br>");
+				}	
+		}
+
+
+	function Primo(n) {
+		if (n <= 1 ) {
+			return false;
+		}
+		
+		for (var i = 2; i <	Math.sqrt(n); i++) {
+			if (n % i === 0 ) {
+				return false;
+			}
+			
+		}
+	
+	return true;
+	}
+
+	var n_dado = Number(prompt("Digite o numero para saber se ele é primo."));
+
+	document.write("o numero escolhido foi " + n_dado );
+	pula(2);
+	mensagem( Primo(n_dado) ? " o número escolhido é primo." : " o numero escolhido não é primo.");
+
+</script>

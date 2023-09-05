@@ -1,0 +1,33 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+	
+		function mensagem(text) {
+		document.write(text);
+		document.write("<br>");
+	}
+	function pula() {
+		document.write("<br>");
+	}
+
+	function SOMAnumeros(A,b,c,d,e) {
+		return A+b+c+d+e ; 
+			}
+			function MEDIAnumeros(a,b,c,d,e) {
+				return (a+b+c+d+e) / 5 ; 
+			}
+
+	
+	var	numero1 = Number(prompt("Digite um numero."));
+		numero2 = Number(prompt("Digite um numero."));
+		numero3 = Number(prompt("Digite um numero."));
+		numero4 = Number(prompt("Digite um numero."));
+		numero5 = Number(prompt("Digite um numero."));
+
+	mensagem("A soma dos numeros foi de :  " + SOMAnumeros(numero1,numero2,numero3,numero4,numero5));
+	pula();
+	pula();
+	mensagem("A media dos numeros é de: " + MEDIAnumeros(numero1,numero2,numero3,numero4,numero5));
+
+
+
+</script>

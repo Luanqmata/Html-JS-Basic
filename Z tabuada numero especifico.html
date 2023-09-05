@@ -1,0 +1,27 @@
+<meta charset="utf-8">
+<h1>Tabuada <h1>
+	<h2><h2>
+<script type="text/javascript">
+	
+	function mensagem(text) {
+		document.write(text);
+	}
+	
+	function pula(linhas) {
+		for (var i = 0; i <linhas; i++) {
+			document.write("<br>");
+		}
+	}
+	
+	function tabuada(n) {
+		for (var mult = 1; mult <=10 ; mult++) {
+
+			mensagem(" Tabuada de " + n + "x" + mult+ " = " + n*mult);
+			pula(2);
+		}
+	}
+
+	var numero = Number(prompt("Digite o numero que você queira a tabuada."));
+
+		tabuada(numero);
+</script>

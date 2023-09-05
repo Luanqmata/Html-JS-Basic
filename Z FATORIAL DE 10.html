@@ -1,0 +1,19 @@
+<meta charset="utf-8">
+    <h1>Cálculo do Fatorial<h1>
+        <h2><h2>
+<script type="text/javascript">
+        function calcularFatorial(numero) {
+            var resultado = 1;
+            
+            for (var i = 2; i <= numero; i++) {
+                resultado *= i;
+            }
+            
+            return resultado;
+        }
+
+        var fatorialDez = calcularFatorial(10);
+
+        document.write("O fatorial de 10 é: " + fatorialDez);
+</script>
+
