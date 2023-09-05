@@ -1,0 +1,38 @@
+<meta charset="utf-8">
+<h1>Questao 8<h1>
+<h2>DIFERENÇA DE PONTOS<h2>
+<h3><h3>
+<script>
+	function mensagem(texto) {
+		document.write(texto);
+	}
+	function pulalinha() {
+		document.write("<br>");
+	}
+	function PontosFeitos(TotalPontos) {
+		return TotalPontos * 3 ;
+	}	
+	function PontosEmpatados(Empate) {
+		return Empate * 1 ; 
+	}
+//________________________________________________________________________________________
+
+	var TotalRodadas = 38 ;
+		PontosVitoria = 30 ; 
+		PontosEmpatados1 = 8 ;
+		PontosAnopassado = 45 ;
+		PontoESSEano = 98 ;
+	mensagem("Pontos Vitoriosos : "  + PontosVitoria + ".");
+	pulalinha();
+	mensagem("Pontos Empatados : " + PontosEmpatados1 + ".");
+	pulalinha();
+	mensagem("A media de pontos ganhos foi de :  "+ PontosFeitos(PontosVitoria) + "Pontos.");
+	pulalinha();
+	mensagem("A media de pontos empatados foi de : " + PontosEmpatados(PontosEmpatados1)+"pontos.");
+	pulalinha();
+	mensagem("sabendo-se que no ano passado seu time fez 45 pontos Neste ano ele fez 98 pontos , e teve a porcetagem melhor de:" + PontoESSEano/PontosAnopassado + "%. de desempenho" );
+	pulalinha();
+	mensagem("Parabéns seu time melhorou");
+
+
+</script>

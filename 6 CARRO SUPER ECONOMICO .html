@@ -1,0 +1,42 @@
+<meta charset="utf-8">
+<h1>Questao 6 <h1>
+<h3><h3>
+<script>
+	function mensagem(texto) {
+		document.write(texto);
+	}
+	function pulalinha() {
+		document.write("<br>");
+	}
+	function  quilometrosCarro( PreçoGas,kmpercorrido,Dinheiropossuido ) {
+		return Dinheiropossuido *kmpercorrido / PreçoGas ;
+	}
+	function LitrosComprou(ValorGasolina , Dinheiropossuido1) {
+		return Dinheiropossuido1 / ValorGasolina ;
+	}
+	function diferçadekm(km1 , km2) {
+		return km1 - km2 ; 
+	}
+//_____________________________________________________________________________________________________________
+//			custo gasolina = 5,00 			/		consumo = 20km				/    Gasto 100 
+	
+	var Dinheiro1 = 88 ;
+		MediaCarro = 20 ; 
+		PreçoGas1 = 5 ; 
+		Kmcpradocom88reais = 352 ; 
+		kmdacidade = 300 ; 
+
+
+	mensagem("Você podera comprar " + LitrosComprou(PreçoGas1 , Dinheiro1) + " Litros de Gasolina.");
+	pulalinha();
+	pulalinha();
+	mensagem("O seu carro conseguirá andar :"+quilometrosCarro(PreçoGas1,MediaCarro,Dinheiro1)+"kms");
+	pulalinha();
+	pulalinha();
+	mensagem("com base nessas informações voçê conseguirá chegar em casa e ainda dar um rolê na cidade");
+	pulalinha();
+	pulalinha();
+	pulalinha();
+	mensagem("e ainda sobrará um total de :" + diferçadekm(Kmcpradocom88reais , kmdacidade) + " Kms ainda para voçê andar sem se preocupar.");
+</script>
+

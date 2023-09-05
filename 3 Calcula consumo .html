@@ -1,0 +1,47 @@
+<meta charset="utf-8">
+<h1>Questao 3 <h1>
+<h2>CALCULA CONSUMO<h2>
+<h3><h3>
+<script>
+
+	function mensagem(texto) {
+		document.write(texto);
+	}
+
+	function pulalinha() {
+		document.write("<br>");
+	}
+
+	function Calculaconsumo(distânciapercorrida , quantidadelitros) {
+		return distânciapercorrida / quantidadelitros ;
+	}
+	function GastocomGasAlcool(valorGasAlco , kmPercorrer , caminho) {
+		return valorGasAlco * kmPercorrer / caminho ;
+	}
+//__________________________CONSUMO CHEVETE______________________________
+//  Consumo de 6.67 /    Gasolina 6,00      /  Gastou 40 rs
+	
+	var TanqueChevas = 42 ;
+		Caminho1chevas = 280 ;
+		valosgas = 40 ; 
+		kmPercorrer1 = 1500;
+	
+	mensagem("O consumo medio do Chevette foi de :" + Calculaconsumo(Caminho1chevas,TanqueChevas).toFixed(2) + "Litros.");
+	pulalinha();
+	pulalinha();
+	mensagem("Se o chevette Andar 1500 km ele ira gastar em Media com gasolina R$:" + GastocomGasAlcool(valosgas , kmPercorrer1 ,Caminho1chevas).toFixed(2) + " Litros.");
+	pulalinha();
+	pulalinha();
+//___________________________CONSUMO FUSCA________________________________
+// consumo de 5 litros    /   ALCOOl 4.39 		/    Gastou 21.95 rs 
+	var TanqueFusca = 38 ;
+		Caminho1Fusca = 190 ;
+		valoralcooç = 22 ; 
+		kmPercorrer2 = 1500 ;
+	
+	mensagem("O consumo medio do Fusca foi de : " + Calculaconsumo(Caminho1Fusca,TanqueFusca) + "Litros.");
+	pulalinha();
+	pulalinha();
+	mensagem("Se o Fusca andar 1500 km ele irá gastar em media com Alcool o total de R$:" + GastocomGasAlcool(valoralcooç, kmPercorrer2 , Caminho1Fusca).toFixed(2) + "Litros.");
+	
+</script>

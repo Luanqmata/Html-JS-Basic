@@ -1,0 +1,39 @@
+<meta charset="utf-8">
+<h1>REFAZENDO PROVA NA FUNÇÂO<h1>
+<h2>Treinamento<h2>
+<h3>QUESTAO 1 E 2 <h3>
+<h4>Questao 1 :<h4>
+
+<script>
+
+	function mensagem(texto) {
+		document.write(texto);
+	}
+
+	function pulalinha() {
+		document.write("<br>");
+	}
+
+	function MediaAcertos(Questoes , AcertosQuestao ) {
+		return AcertosQuestao / Questoes * 100 ; 
+	}
+//_________________________________________________Q1____________________________________
+
+	var Questaoprova1 = 120 ;
+		AcertosProva1 = 54 ; 
+
+		mensagem("R: A porcetagem de acertos da Primeira prova foi de : " + MediaAcertos(Questaoprova1 , AcertosProva1) +"%.");
+		pulalinha();
+		pulalinha();
+		mensagem("QUESTAO 2 : ");
+		pulalinha();
+//_________________________________________________QUESTAO 2______________________________
+	var	Questaoprova2 = 214 ;
+		AcertosProva2 = 58 ; 
+
+		pulalinha();
+		mensagem("R: A porcetagem de acertos da Primeira prova foi de : " + MediaAcertos(Questaoprova2,AcertosProva2).toFixed(0) + "%.");
+
+
+
+	</script>

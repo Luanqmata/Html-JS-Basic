@@ -1,0 +1,27 @@
+<meta charset="utf-8">
+<h1>Media Final : Luan Brito Sousa Calazans</h1>
+<h3><h3>
+<script>
+	function pula() {
+		document.write("<br>");
+	}
+	function mensagem(text) {
+		document.write(text);
+	}
+
+	function NotaFinal(Exe , SIMU ,Prova) {
+		return (Exe*0.2) + (SIMU*0.10) + (Prova*0.7) ;
+	}
+
+	var nota_exercicios =  10;
+		nota_simulado = 9;
+		nota_prova = 6;
+
+	mensagem("A nota dos exercicios foi de : " + nota_exercicios +"." );
+	pula();
+	mensagem("A nota do Simulado foi de :" + nota_simulado + ".");
+	pula();
+	mensagem("A nota da Prova foi de : "+ nota_prova + ".");
+	pula();
+	mensagem("E a Media da Nota final foi de : " + NotaFinal(nota_exercicios,nota_simulado,nota_prova) + " Pontos.");
+</script>

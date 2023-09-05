@@ -1,0 +1,45 @@
+<meta charset="utf-8">
+<h1>Calcula Consumo</h1>
+<h2>Questao 4</h2>
+<h3>		<h3>
+
+<script> 
+	function mensagem(texto) {
+		document.write(texto);
+	}
+	function pulalinha() {
+		document.write("<br>");
+	}
+	function Consumo(distanciapercorrida , quantidadeLitros) {
+		return distanciapercorrida / quantidadeLitros ;
+	}
+	function GastoGasAlcool(ValorGasAlcool , kmPercorrer , distancia) {
+		return ValorGasAlcool * kmPercorrer / distancia ;
+	}
+//_____________________________________________________________________________________________
+// CONsumo = 6.46         /       Preço GAS=  5,55              /   GAstos =  35,85
+	var distanciapercorrida1 = 420 ;
+		quantidadeLitrosGas = 65 ;
+		gastoGas = 35,85 ;
+		kmPercorrer1 = 2100 ; 
+
+	mensagem("O consumo do Opala A Gasolina foi de : " + Consumo(distanciapercorrida1 , quantidadeLitrosGas).toFixed(2) + "Litros.");
+	pulalinha();
+	pulalinha();
+	mensagem("Se o Opala for percorrer 2100km/s ele ira gastar em média o valor de R$:"+ GastoGasAlcool(gastoGas,kmPercorrer1,distanciapercorrida1).toFixed(2)+ ".");
+	pulalinha();
+	pulalinha();
+//_________________________________________________________________________________________________
+// consumo = 6.67		/  		Preço alcoo = 3,90  				/ 		GASto = 26 
+	var distanciapercorrida2 = 300 ;
+		quantidadeLitrosALCOOL = 45 ;
+		gastosAlcool = 26 ;
+		kmPercorrer2 = 2100 ; 
+
+	mensagem("O consumo do Santana a Alcool Foi de : "+ Consumo(distanciapercorrida2, quantidadeLitrosALCOOL).toFixed(2) + "Ltros.");
+	pulalinha();
+	pulalinha();
+	mensagem("Se o Santana a Alcool for percorrer 2100km/s ele ira gastar em média o valor de R$:" + GastoGasAlcool(gastosAlcool,kmPercorrer2,distanciapercorrida2).toFixed(2) + " Reais ."); 
+	pulalinha();
+
+</script>

@@ -1,0 +1,26 @@
+<meta charset="utf-8">
+<h1>Questão 1 <h1>
+<h2><h2>
+<script>
+	function pulalinha() {
+		document.write("<br>");
+	}
+	function mensagem(texto) {
+		document.write(texto)
+	}
+	function mediadeconvidados(Totaldeconvidados , convidadosVIps) {
+		return Totaldeconvidados / convidadosVIps ; 
+	}
+	var TotalCONVIDADOS = 53;
+		convidosvip1 = 20 ; 
+
+	mensagem("total de convidados igual a 53 convidados ");
+	pulalinha();
+	mensagem("O total de convidados vips é de : 20 convidados");
+	pulalinha();
+	mensagem("E o total de convidados Normais é de : 33");
+	pulalinha();
+	mensagem("a Porcetagem de convidados vips é de : " + mediadeconvidados(TotalCONVIDADOS , convidosvip1) + "%.");
+	pulalinha();
+	mensagem("Essa festa é popular");
+</script>

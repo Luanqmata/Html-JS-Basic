@@ -1,0 +1,35 @@
+<meta charset="utf-8">
+<h1>Diferença de Idades<h1>
+<h2>Questao 5 <h2>
+<h3>  <h3>
+
+<script>
+
+	function pulalinha() {
+		document.write("<br>");
+	}
+	function mensagem(textoo) {
+		document.write(textoo);
+	}
+
+	function DiferençaPai(IdadeLuan , IdadeEvandro) {
+		return IdadeEvandro - IdadeLuan	;
+	}
+
+	function DiferençaIrmã(IdadeLuan1 , idadeThaina) {
+		return IdadeLuan1 - idadeThaina ; 
+	}
+	
+	var	MinhaIdade = 20 ;
+		IdadeEvandro1 = 58 ;
+		idadeThaina1 = 27;
+
+	mensagem("A Idade de Luan é de : 20 anos. ");
+	pulalinha();
+	mensagem("A idade do meu pai é de 58 anos.");
+	pulalinha();
+	mensagem("A Idade da Minha Irmã é de 27 anos.");
+	pulalinha();
+	pulalinha();
+	mensagem(" Minha diferença de idade para minha irmã é de "+ DiferençaIrmã(idadeThaina1 , MinhaIdade)+ " anos e para meu pai é de " + DiferençaPai(IdadeEvandro1 , MinhaIdade)+ " anos");
+</script>
