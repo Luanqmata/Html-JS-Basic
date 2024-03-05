@@ -1,0 +1,33 @@
+<script type="text/javascript">
+    // Lista preco vazia 
+    var preco = [];
+
+    // Adiciona valores à lista preco
+    preco.push(4.549, 5.499, 2.119, 4.099, 3.768);
+
+    //valor atual e o valor mais barato
+    var atual = preco[0]; //cria var atual e barato e coloca ela para iniciar com o primeiro valor da lista 
+    var barato = preco[0];
+	//console.log(atual) //tirar a prova como inicia com o 1 valor da lista
+	//console.log(barato)
+	
+	
+	console.log('lista de valores: '+preco)//imprime a lista para o usuario a vê-la
+
+    // Loop para percorrer os dados da array
+    for (var i = 0; i <= 4; i++) {
+		
+        console.log(preco[i]);// imprime todos os valores de 1 a 4 como no loop	
+
+		atual = preco[i] //vai adicionando os valores q ela vai percorrendo no valor atual , prem ele é substituido
+		
+        if (preco[i] < barato) {  // Compara o valor atual com o mais barato e atualiza se necessário
+            barato = preco[i];
+        }
+    }
+
+    // Imprime o preço mais barato e o valor atual no console
+    console.log("Preço mais barato: " + barato);
+    console.log("Valor atual: " + atual);
+
+</script>
