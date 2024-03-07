@@ -1,0 +1,28 @@
+<meta charset="utf-8">
+<h1>Retorna Numeros Positivos</h1>
+
+<script>
+    function pula(linhas){
+        for(var i = 0; i < linhas; i++){
+            document.write('<br>')
+        }
+    }
+document.write('Criar uma função que receba como parâmetro um array de números e retorne um array contendo somente números positivos: ');
+pula(2);
+numeros = [ -1 , 5 , -5 , -6 , 3 , 194 , -100 ] 
+document.write('A lista inicial : ' + numeros);
+pula(2);
+    function retorna_positivo (lista){
+        var resultado = [ ]
+        for(var i = 0;i < lista.length ; i++){
+            //document.write(lista[i])
+            if (lista[i] > 0){
+                //document.write(lista[i])
+                resultado.push(lista[i]);
+            }
+        }
+        document.write('R:' + resultado);
+    }
+    retorna_positivo(numeros);
+
+</script>
