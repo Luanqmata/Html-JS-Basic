@@ -1,0 +1,59 @@
+<meta charset="utf-8">
+<h1> Verifica Array </h1>
+<script>
+    function pula(linhas){
+            for(var i = 0 ; i < linhas; i++){
+                document.write('<br>');
+            }
+        }
+
+    var numeros = [ -1 , -15 , 13 , 14 , 16 , -33 ,22 , 50 , 34 , -55 ];
+
+    document.write('A lista inicial é: ' + numeros);
+
+    pula(2);
+
+    var numeros_maiores = 0 ;
+    var numeros_menores = 0 ;
+    var resultado_Nmaior = [ ];
+    var resultado_Nmenor = [ ];
+    
+    var numero_Umenor = numeros[0];
+    var numero_Umaior = numeros[0];
+    var resultado_Umaior = [ ];
+    var resultado_Umenor = [ ];
+
+    function retorna_maior_menor ( lista ) {
+        for(var i = 0; i < lista.length; i++) {
+            //document.write(lista[i])
+            if( lista[i] > 0 ) {
+                //document.write(lista[i])
+                resultado_Nmaior.push(lista[i]);
+            }
+            if (lista[i] < 0 ){
+                resultado_Nmenor.push(lista[i]);
+            }
+            if (lista[i] > numero_Umaior ){
+                //document.write(resultado_Umaior[i]);
+                numero_Umaior = lista[i];
+                resultado_Umaior = [ numero_Umaior];
+                //resultado_Umaior.push(numero_Umaior)
+            }
+            if (lista[i] < numero_Umenor ) {
+                numero_Umenor = lista[i];
+                resultado_Umenor = [ numero_Umenor ]
+                //resultado_Umenor.push(numero_Umenor);
+            }
+            
+        }
+    }
+    retorna_maior_menor(numeros);
+
+    document.write('Os numeros MAIORES que 0 são: '+ resultado_Nmaior );
+    pula(2);
+    document.write('Os numeros MENORES que 0 são: '+ resultado_Nmenor );
+    pula(2);
+    document.write('Numero MAIOR da array: ' + resultado_Umaior);
+    pula(2);
+    document.write('Numero MENOR Dentro da array: ' + resultado_Umenor)
+</script>
