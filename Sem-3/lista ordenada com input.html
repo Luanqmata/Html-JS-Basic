@@ -1,0 +1,36 @@
+<meta charset="utf-8">
+<h1> ORDENA NUMEROS ESCOLHIDOS - lista Carnaval.</h1>
+<script>
+    function pula(linhas){
+        for(var i = 0; i < linhas; i++){
+        document.write('<br>')
+        }
+    }
+
+    var numeros_ordenados = [ ]
+    
+    function ordena_numeros() {
+        
+        var numeros_agrupados = [  ] 
+        
+        var numero1 = Number(prompt('Digite o primeiro numero desejado.'));
+        var numero2 =  Number(prompt('Digite o segundo numero desejado.'));
+        var numero3 =  Number(prompt('Digite o terceiro numero desejado.'));
+        numeros_agrupados.push(numero1)
+        numeros_agrupados.push(numero2)
+        numeros_agrupados.push(numero3)
+
+        document.write('Os Numeros escolhidos pelo User na ordem : ' + numeros_agrupados)
+        
+        for(var i = 0; i < numeros_agrupados.length ; i++){
+            //document.write(numeros_agrupados[i])
+            numeros_ordenados.unshift(numeros_agrupados[i])
+        }
+        
+    }
+    ordena_numeros()
+    //numeros_ordenados.reverse()
+    pula(2)
+    document.write('E eles colocados no final da lista fica assim: ' + numeros_ordenados)
+
+</script>
