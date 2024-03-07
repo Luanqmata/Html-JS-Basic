@@ -1,0 +1,43 @@
+<meta charset="utf-8">
+<h1>Bem Vindo ao Ordenador.</h1>
+<script>
+    
+    function pula(linhas){
+        for(var i = 0; i < linhas; i++){
+        document.write('<br>')
+        }
+    }
+
+    var numeros_user = [ ]
+    var lista_inversa = [ ]
+
+    function qnt_Perguntas() {
+        pula(1)
+        
+        var loop_array = Number(prompt('Digite a quantidade de Numeros que Serão adicionado a array: '))
+
+        for(var i = 0; i < loop_array ; i++){
+            var numeros_selecionados = Number(prompt('Agora digite o Numero a Ser colocado na lista: '))
+            numeros_user.push(numeros_selecionados)
+        }
+
+        document.write('O usuario escolheu para loopar  ' + loop_array + ' vezes.')
+        pula(2)
+        document.write('Os numeros selecionados pelo Usuario fora de ordem: '+numeros_user);
+        pula(2)
+
+    }
+
+    function reverse_manual() {
+        for(var i = 0; i < numeros_user.length; i++){
+            //document.write(numeros_user[i])
+
+            lista_inversa.unshift(numeros_user[i])
+        }
+
+        document.write('Os Numeros selecionados pelo User Ao contrario: ' + lista_inversa)
+    }
+
+qnt_Perguntas()
+reverse_manual()
+</script>
