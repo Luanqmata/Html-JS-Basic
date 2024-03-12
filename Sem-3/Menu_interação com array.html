@@ -1,0 +1,98 @@
+<meta charset="utf-8">
+<h1>Seja Bem indo ao verificador.</h1>
+<script>
+    var boas_vindas = '================>>>>>>Bem vindo<<<<<<<<============ \n ao menu de verificação ==> "pares,maior_N,==."';
+    var opçoes_menu = ' MENU DE ESCOLHA: \n Opção 1: Total de Numeros pares dentro da ARRAY. \n Opção2: Verifica MAIOR numero da ARRAY. \n Opção 3: Verifica Igualdade De numeros Dentro de 2 Arrays Diferentes.';
+
+
+    alert(boas_vindas);
+    alert(opçoes_menu);
+
+
+    function pula(linhas){
+        for(var i = 0; i < linhas; i++){
+        document.write('<br>')
+        }
+    }
+
+    var array = [157, 244 , 159 , 666 , 777 , 69 ];
+    var array2 = [ 22 , 157 , 244 , 69 ,37 , 89 , 96];
+
+    function Total_de_numeros_pares( lista ){
+        document.write('A array que será Analisada Será:' + array);
+        pula(2);
+
+        numeros_pares = [ ];
+        contagem_de_pares = 0;
+
+        for(var i = 0; i <= lista.length ; i ++){
+            //document.write(i)
+            if (lista[i] % 2 == 0 ) {
+                //document.write(lista[i]+ ',');
+                contagem_de_pares +=1;
+                numeros_pares.unshift(lista[i])
+            }
+        } 
+        document.write('O total de numeros pares desse array é de: ' + contagem_de_pares);
+        pula(2);
+        //document.write('E os numeros pares são:' + numeros_pares)
+        //pula(2);
+    }
+
+    function verifica_maior_numero_array( lista ) {
+        document.write('A array que será Analisada Será:' + array);
+        pula(2);
+
+        var indice_inicio = array[0];
+        var maior_numero = [ ] ; 
+
+        for(var i = 0 ; i <= lista.length ; i++){
+            //document.write(i);
+            if (lista[i] > indice_inicio){
+                indice_inicio = lista[i]; // eu tenho retornar para a maquina que ela deve substituir o indice do inicio com o indice q eu estou procurando ou o indice maior etc...
+                maior_numero = [ indice_inicio ]// e depois armazenar o numero maior ou desejado como seja dentro da lista vazia resultado da conta. 
+            }
+            //if ( lista[i] < indice_inicio){ //no caso se pedisse o menor numero. 
+            //    indice_inicio = lista[i];
+            //    maior_numero = [indice_inicio]
+            // }
+        }
+        document.write('O maior numero dentro dessa array é: ' + maior_numero);
+        pula(2);
+    }
+
+    function verifica_igualdade_dentro_lista(lista1 , lista2) {
+        document.write("As array's que serão Analisadas :");
+        pula(1);
+        document.write('Array1 ==' +array);
+        pula(1);
+        document.write('Array2 ==' +array2);
+        pula(2);
+        contagem_numeros_iguais = 0;
+        numeros_iguais = [ ];
+        for(var a1 = 0; a1 < lista1.length; a1++){
+            for(var a2 = 0; a2 < lista2.length; a2++){
+                if(lista1[a1] == lista2[a2]){
+                    contagem_numeros_iguais +=1;
+                    numeros_iguais.unshift(lista2[a2])
+                }
+            }
+        }
+        document.write('existem '+contagem_numeros_iguais+ ' numeros iguais dentro dessa array.');
+        pula(1);
+        document.write('e os numeros iguais dentro dessas lista são: ' + numeros_iguais);
+    }
+    
+    var input_user = Number(prompt('Digite o numero de acordo com a lista do MENU.'));
+
+    if (input_user == 1 ){
+        Total_de_numeros_pares(array);
+    }else if (input_user == 2){
+        verifica_maior_numero_array(array);
+    }else if (input_user == 3){
+        verifica_igualdade_dentro_lista(array,array2);
+    }else {
+        alert('SOMENTE OPÇOES DE 1 A 3.');
+        document.write('Reinicie a pag BURRO!!')
+    }
+</script>
