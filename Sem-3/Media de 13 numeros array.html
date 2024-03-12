@@ -1,0 +1,27 @@
+<meta charset="utf-8">
+<h1>verificando media de 13 numeros usando for</h1>
+<script>
+    function pula(linhas){
+        for(var i = 0; i < linhas;i++){
+            document.write('<br>');
+        }
+    }
+    var Treze_numeros= [1,2,3,4,5,6,7,8,9,10,11,12,13];
+    document.write('Lista de numeros: ' + Treze_numeros)
+    pula(2)
+
+    function analisa_media(lista) {
+        var guarda_dados = 0 ;
+
+        for(var i =0; i <= lista.length ; i++){
+            guarda_dados += i;
+        }
+        resultado_conta = (guarda_dados / lista.length);
+        document.write('A soma desses numeros dentro dessa array é igual a: ' + guarda_dados);
+        pula(2)
+        document.write('E a media desse valor comparado com numeros de posiçoes no array é: '+resultado_conta);
+    }
+
+    analisa_media(Treze_numeros);
+
+</script>
