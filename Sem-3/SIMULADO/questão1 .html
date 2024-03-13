@@ -1,0 +1,17 @@
+<meta charset="utf-8">
+<h1>Calcula Nota de Prova HTML.</h1>
+<script>
+    function pula(linhas){
+        for(var i = 0; i < linhas;i++){
+            document.write("<br>")
+        }
+    }
+    var questao_acertadas = Number(prompt('Digite a quantidade de acertos que voçê obteve na prova: '))
+    var questoes = 50;
+
+    conta = (questao_acertadas / questoes ) * 100
+
+    document.write('A prova tem ' + questoes + ' Questoes. e voce acertou ' + questao_acertadas);
+    pula(2);
+    document.write('Voçê obteve '+ conta +'% de Acertos.');
+</script>
