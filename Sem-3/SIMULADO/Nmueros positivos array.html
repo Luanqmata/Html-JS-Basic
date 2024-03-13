@@ -1,0 +1,24 @@
+<meta charset="utf-8">
+<h1>Numeros positivos da array</h1>
+<script>
+    function pulalinha(linhas) {
+		for(var i = 0; i < linhas;i++){
+			document.write("<br>");
+		}
+	}
+    numeros = [16,82,45,69,88,-10,-55,-43,-10]
+    document.write('A lista a ser Analisada Sera essa:' + numeros)
+    pulalinha(2)
+    function separa_numeros_positivos( lista ){
+        var numeros_positivos = [ ]
+        
+        for(var i = 0; i < lista.length; i++ ){
+            if(lista[i] > 0){
+                //document.write(lista[i])
+                numeros_positivos.push(lista[i]);
+            }
+        }
+        document.write('A lista de numeros positivos é: ' + numeros_positivos);
+    }
+    separa_numeros_positivos(numeros);
+</script>

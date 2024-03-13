@@ -1,0 +1,26 @@
+<meta charset="utf-8">
+<h1> retorna maior valor da array</h1>
+<script>
+    function pula(linhas){
+        for(var i = 0; i < linhas;i++){ // crio o loop que se inicia em 0 e vai ate o equivalente q pessoa colocar 
+            document.write("<br>"); //comando de pular linhas 
+        }
+    }
+    array_8_elementos = [ 1,2,3,4,5,6,7,8,9] // crio a lista 
+    document.write('A lista a Ser analisada sera: ' + array_8_elementos)
+    pula(2)
+    function identificar_maior_numero_naArray( lista ){
+        var primeira_pos = lista[0]         //defino a var com a primeira pos da lista 
+
+        for(var i = 0; i< lista.length; i++){       //percorro os dados 
+            //document.write(lista[i])                      //tirando a prova qesta dando tudo certo ate agora 
+            if (lista[i] > primeira_pos ){          //crio a condição para todos os numeros que forem maios do q o primeiro 
+                primeira_pos = lista[i]             //substituir a primeira pos para a condição criada (' numero maior que o primeiro numero da lista ')
+            }
+        }
+        document.write('e o maior valor dentro dessa array é de : '+primeira_pos)
+        pula(2)
+    }
+    identificar_maior_numero_naArray(array_8_elementos);
+
+</script>

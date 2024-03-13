@@ -1,0 +1,23 @@
+<meta charset="utf-8">
+<h1>Soma de valores dentro de uma lista de tamanho 9 indices.</h1>
+<script>
+    function pula(linhas){
+        for(var i = 0; i < linhas;i++){
+            document.write("<br>");
+        }
+    }
+
+    var lista_numerica = [ 5, 3, 6, 8,21 ,33, 45, 23,9,10];
+    function soma_array( lista ){
+        soma_dos_valores = 0;
+
+        for(var i = 0; i < lista.length;i++){
+            //document.write(lista[i])
+            soma_dos_valores += lista[i];
+        }
+        document.write('A lista Apresentada foi essa:' + lista_numerica);
+        pula(2);
+        document.write('E a soma de todos os valroes dentro dessa lista é de:' + soma_dos_valores)
+    }
+    soma_array(lista_numerica);
+</script>

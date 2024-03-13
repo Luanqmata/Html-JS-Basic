@@ -1,0 +1,45 @@
+<meta charset="utf-8">
+<script>
+    function pula(linhas){
+        for(var i = 0; i < linhas;i++){ // crio o loop que se inicia em 0 e vai ate o equivalente q pessoa colocar 
+            document.write("<br>"); //comando de pular linhas 
+        }
+    }
+    function mensagem(texto) {
+		document.write(texto);
+	}
+
+    var lista = [ 90,70,50,80,60,85 ];
+    mensagem('A lista inicial é: ' + lista)
+    pula(2);
+
+    mensagem('Adicionar 3 numeros no final.');
+    pula(1);
+    lista.push(1,4,6)   // coloca no final 
+    mensagem(lista);    
+    pula(2);
+
+    mensagem('Acrescente 2 números no início');
+    pula(1);
+    lista.unshift(3,9); //coloca no inciio
+    mensagem(lista);
+    pula(2)
+
+    mensagem('Insira um numero na posição 4');
+    pula(1);
+    lista.splice(4,0,'4') //colocar na pocisao 4
+    mensagem(lista);
+    pula(2);
+
+    mensagem('Exclua um numero do início');
+    pula(1);
+    lista.splice(0,1); // remove o primeiro 1 repetindo 1 vez
+    mensagem(lista);
+    pula(2);
+    
+    mensagem('Exclua um número do final');
+    pula(1);
+    lista.splice(-1); // remove a ultima posição da array
+    mensagem(lista);
+
+</script>

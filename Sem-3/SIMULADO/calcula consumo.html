@@ -1,0 +1,47 @@
+<meta charset="utf-8">
+<h1>Alcool ou Gasolina </h1>
+<script>
+
+	function mensagem(texto) {
+		document.write(texto);
+	}
+	function pulalinha(linhas) {
+		for(var i = 0; i < linhas;i++){
+			document.write("<br>");
+		}
+	}
+	function ConsumoCivicVersa(tanque , caminho) {
+		return caminho / tanque ; 
+	}
+
+	function GastocomGasAlcool(valorGasAlco , kmPercorrer , caminho) {
+		return valorGasAlco * kmPercorrer / caminho ;
+	}
+//civic tanque 42 litro   caminho 560  560 /42
+// consumo de 13,3  litros Gasolina 8 reais   106 reais gastos.
+
+	var tanque1 =42 ; 
+		caminho1 = 560 ;
+		ValorGas = 106 ; 
+		kmPercorrer1 = 1000;
+
+	mensagem("o consumo do Civic foi de : " + ConsumoCivicVersa(tanque1 , caminho1 ).toFixed(2) + " litros.");
+	pulalinha(2);
+	mensagem("O Civic gastou :"+ GastocomGasAlcool(ValorGas , kmPercorrer1 , caminho1).toFixed(2) + "$ Reais. Para andar 1000km.");
+	pulalinha(2);
+	pulalinha(2);
+
+
+// versa  tanque 50 l caminho380  380/50
+// CONSUMO DE 7.6 LITROS  ALCOOL 7 REIAS  53 REAIS GASTO 
+
+	var Tanque2 = 50 ; 
+		caminho2 = 380 ;
+		ValorAlcoo = 53 ;
+		kmPercorrer2 = 1000 ;
+
+	mensagem("o consumo do Versa foi de : " + ConsumoCivicVersa(Tanque2 , caminho2) + " Liros . ");
+	pulalinha(2);
+	mensagem("O Versa gastou :"+ GastocomGasAlcool(Tanque2 , kmPercorrer2 , caminho2 ).toFixed(2) + "$ Reais. Para andar 1000km.");
+
+</script>
