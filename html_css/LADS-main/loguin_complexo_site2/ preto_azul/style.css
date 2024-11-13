@@ -1,0 +1,240 @@
+/*
+COMANDO FONTE INTER 
+
+.inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
+font assap (LADS)
+.asap-condensed-bold {
+  font-family: "Asap Condensed", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+
+COMANDO DA FONT BLINKER 
+
+.blinker-light {
+  font-family: "Blinker", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+*/
+
+#caixa-mae{
+    width: 100%;
+    display: flex;
+    border: 2px solid black;
+}
+/* PARTE PRETA */
+.preto{
+  padding-top: 29px;
+   background-color: black;
+    width: 50%;   
+}
+h1{
+    text-align: center;
+    color: #094EB5;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 650;
+    font-style: normal;
+    font-size: 40px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+/* PARTE DO USUARIO INPUT */
+#usuario{
+  padding-bottom: 20px;
+}
+#input-user{
+    width: 43%;
+    background-image: url(usuario.png);
+    background-repeat: no-repeat;
+    background-position: 5% center;
+    background-size: 7%;
+    border: 2px solid black;
+    background-color: #D9D9D9;
+    margin-left: 180px;
+    border-radius: 50px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-left: 60px;
+    padding-right: 40px;
+}
+#usuario input::placeholder{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+#usuario input:focus{
+    outline: none;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-size: 17px;
+    font-weight: 400;
+}
+/* PARTE DA SENHA INPUT */
+#input-senha{
+    width: 43%;
+    background-image: url(password.png);
+    background-repeat: no-repeat;
+    background-position: 5% center;
+    background-size: 7%;
+    border: 2px solid black;
+    background-color: #D9D9D9;
+    margin-left: 180px;
+    border-radius: 50px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-left: 60px;
+    padding-right: 40px;
+}
+#senha input::placeholder{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+#senha input:focus{
+  outline: none;
+}
+/* ESQUECEU SUA SENHA? */
+.esqueceu-senha{
+    padding-left: 24%;
+    font-size: 17px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 420;
+    font-style: normal;
+}
+.esqueceu-senha a{
+    text-decoration: none;
+    color: #094EB5;
+}
+.esqueceu-senha a:hover{
+  color: #2E86C1;
+}
+/* PARTE DO BOTÃO ENTRAR */
+#botao-entrar{
+    padding-top: 6px;
+    text-align: center;
+}
+.botao-entrar{
+    border: none;
+    background-color: #094EB5;
+    border-radius: 50px;
+    width: 30%;
+    color: #CCCCCC;
+    font-size: 30px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+.botao-entrar:hover{
+  background-color: #2E86C1;
+  cursor: pointer;
+}
+.botao-entrar:active {
+  transform: translateY(2px);
+}
+/* PARTE DA FRASE REDE SOCIAL */
+.frase-rede-social{
+  text-align: center;
+  color: #CCCCCC;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 280;
+  font-style: normal;
+  font-size: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* PARTE DOS CIRCULOS REDE SOCIAL */
+.outras-formas-entrar{
+  padding-left: 250px;
+  list-style-type: none;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+.outras-formas-entrar li{
+  background-color: #D9D9D9;
+  margin-right: 39px;
+  padding-top: 39px;
+  padding-bottom: 25px;
+  width: 40%;
+  border-radius: 60%;
+}
+.google{
+  background-image: url(icone-google.png);
+  background-size: 85%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.linkedin{
+  background-image: url(icone-linkedin.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.facebook{
+  background-image: url(facebook-icone.png);
+  background-size: 95%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* PARTE DOS CADASTRE-SE */
+.cadastre-se{
+  padding-top: 20px;
+  padding-bottom: 70px;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.cadastre-se a{
+  text-decoration: none;
+  color: #094EB5;
+}
+.cadastre-se a:hover{
+  color: #2E86C1;
+  cursor: pointer;
+}
+/* PARTE DA DIREITA LADO AZUL*/
+.azul{
+    width: 50%;
+    background-color: #01005B;
+    background-image: url(imagem-dos-pc.png);
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: 46% 93%;
+}
+h2{
+  color: #FFFFFF;
+  text-align: center;
+  font-size:80px;
+  font-family: "Asap Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.titulo{
+  font-size: 40px;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: "Blinker", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin-top: -50px;
+}

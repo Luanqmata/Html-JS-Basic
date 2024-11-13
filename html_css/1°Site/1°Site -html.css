@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<meta charset="utf-1">
+<html lang="pt-br">
+	<head>
+		<style>
+			.mudar-cor{
+				animation: trocarCores 5s linear infinite;
+			}
+			@keyframes trocarCores{
+				0% { color: red;}
+				50% { color: blue;}
+				100% {color: white;}
+			}
+		</style>
+		<meta charset="UTF-8">
+		<title>InFindaDe</title>
+		<link rel="stylesheet" href="desafio.css">
+	</head>
+		<body>
+			<h1>Você Acha Realmente que Estamos Sozinhos.</h1>
+				<h2>Ou que Realmente Existe Algum Deus.</h2>
+			<img src="pngegg.png">
+				<h3>\|/ </h3>
+					<h4 class="mudar-cor">. -..- .. ... - . -- / -..-. / - .- -. - --- ... / -.. . ..- ... . ...</h4>
+					<h4 class="mudar-cor">cnkoghm vhrcnl qÇkkw eqhmfd rÇud rjtkk qduhdv bdqdÇk bnqm Çqlw svhm eqdrg</h4>
+			<img src="pngegg1.png">
+		
+				<p id="titulo"> | ENERGIA | NUMEROS | </p>
+				<li id ="energia"> <strong>Tudo é energia.</strong></li>
+				<li id ="numeros"> <em>A matematica é ensencial para o descobrimento da vida fora da terra.</em></li>
+				<li id ="numeros"> <em><strong> Com o uso de Numeros podemos chegar a pontos exatos. como lançamntos de foguetes. </strong> 	</em></li>
+				<li id ="energia"> <em> A Energia esta presente em tudo Ex: você trisca no braço de alguem e leva um choque.</em></li>
+				<li id ="energia"> <em><strong> essa é só mais uma prova que somos energia como todas as outras coisas.</strong></em></li>
+				<li id ="numeros"> <em><strong>π</strong> </em></li>
+			 	
+			
+				
+						<h5> <em> Lista de </em> <strong> AutoquestimentoQuantico:</strong> </h5>
+				<ol>
+					<img src="pngwing.com.png">
+					<li id = "blue"><strong> No EGITO O Centro do mundo Gizé.</strong></li>
+					<li id = "red"> <strong> Como a descoberta de vida extraterrestre, se ocorrer, poderia impactar nossa compreensão da existência e significado da vida? . </strong></li>
+					<li id = "blue"> <strong> MATRIX ? </strong> </li>
+					<li id ="red"><strong>Porque Antigamente existiam tantos Astrofísicos e hojê em dia não existe Nenhum.</strong></li>
+					<li id = "blue"><strong> Porque os Astrofisicos eram tão obçecados por números.</strong></li>
+					<li id ="red"><strong> E Qual a Importancia dos Números para o descobrimento da verdade.</strong></li>
+					</ol>
+							<h6 class="mudar-cor" ><strong> Tantas conhecidencias.</strong></h6>
+					
+					
+								<li id="oculto">...- .. ...- . -- --- ... </li>
+								<li id="oculto"> -. .- </li>
+								<li id="oculto">-- .- - .-. .. -..-</li>
+		
+		<script>
+		alert('se Autodestruir em 240s.')
+		alert('bem vindo a Pagina InFinidaDe.')
+		</script>
+
+		
+	</body>
+</html>

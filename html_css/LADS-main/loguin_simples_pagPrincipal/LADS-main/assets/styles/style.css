@@ -1,0 +1,536 @@
+/* Imports das fontes Montserrat e Almarai do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Configurações Globais */
+:root {
+  --almaria: "Almaria", sans-serif;
+  --montserrat: "Montserrat", sans-serif;
+
+  --check-color-dark: brightness(0.8) saturate(100%) hue-rotate(345deg);
+  --check-color-light: brightness(0.8) saturate(100%) hue-rotate(225deg);
+
+  --bg-color-dark: #090909;
+  --text-color-dark: #dcdce3;
+  --navbar-bg-color-dark: #1e1e1e;
+  --navbar-border-dark: #000;
+  --link-color-dark: #ffffff;
+  --link-hover-color-dark: #c91945;
+
+  --bg-color-light: #d6d6d6;
+  --text-color-light: #090909;
+  --navbar-bg-color-light: #f4f4f4;
+  --navbar-border-light: #ccc;
+  --link-color-light: #000;
+  --link-hover-color-light: #01005b;
+
+  --main-text-color-dark: #d6d6d6;
+  --main-text-color-light: #090909;
+  --main-bg-color-dark: #090909;
+  --main-bg-color-light: #d6d6d6;
+
+  --border-color-light: #090909;
+  --border-color-dark: #d6d6d6;
+  --button-hover-dark: #d22d56;
+  --button-hover-light: #0e0c96;
+
+  --input-bg-color-dark: #212120;
+  --input-bg-color-light: #9b9b96;
+
+  --card-bg-dark: #0d0d0d;
+  --card-bg-light: #a9a9a9;
+
+  --service-item-bg-dark: #e3073e;
+  --service-item-bg-ligth: #01005b;
+
+  --item-shadow-dark: #700e26;
+  --item-shadow-ligth: #151471;
+
+  --accordion-item-dark: #121212;
+  --accordion-item-light: #939393;
+}
+
+/* Modo claro */
+body.light-mode {
+  --bg-color: var(--bg-color-light);
+  --text-color: var(--text-color-light);
+  --navbar-bg-color: var(--navbar-bg-color-light);
+  --navbar-border: var(--navbar-border-light);
+  --link-color: var(--link-color-light);
+  --link-hover-color: var(--link-hover-color-light);
+  --main-text-color: var(--main-text-color-light);
+  --main-bg-color: var(--main-bg-color-light);
+  --border-color: var(--border-color-light);
+  --input-bg-color: var(--input-bg-color-light);
+  --button-hover: var(--button-hover-light);
+  --card-bg-color: var(--card-bg-light);
+  --service-item-bg: var(--service-item-bg-ligth);
+  --item-shadow: var(--item-shadow-ligth);
+  --check-color: var(--check-color-light);
+  --accordion-color: var(--accordion-item-light);
+}
+
+/* Modo Escuro */
+body.dark-mode {
+  --bg-color: var(--bg-color-dark);
+  --text-color: var(--text-color-dark);
+  --navbar-bg-color: var(--navbar-bg-color-dark);
+  --navbar-border: var(--navbar-border-dark);
+  --link-color: var(--link-color-dark);
+  --link-hover-color: var(--link-hover-color-dark);
+  --main-text-color: var(--main-text-color-dark);
+  --main-bg-color: var(--main-bg-color-dark);
+  --border-color: var(--border-color-dark);
+  --input-bg-color: var(--input-bg-color-dark);
+  --button-hover: var(--button-hover-dark);
+  --card-bg-color: var(--card-bg-dark);
+  --service-item-bg: var(--service-item-bg-dark);
+  --item-shadow: var(--item-shadow-dark);
+  --check-color: var(--check-color-dark);
+  --accordion-color: var(--accordion-item-dark);
+}
+
+/* Estilos para o body */
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Estilos para a navbar */
+.navbar-color {
+  background-color: var(--navbar-bg-color);
+  border-bottom: 3px solid var(--navbar-border);
+}
+
+/* Animações e estilos para links da navbar */
+.link-hover {
+  position: relative;
+  font-weight: 600;
+  font-family: var(--almaria);
+  color: var(--link-color);
+}
+
+.link-hover:hover {
+  color: var(--link-hover-color);
+}
+
+.link-hover::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--link-hover-color);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.link-hover:hover::before {
+  transform: scaleX(1);
+}
+
+@media screen and (max-width: 900px) {
+  .link-hover::before {
+    display: none;
+  }
+}
+
+/* Estilos para a imagem do IESGO na navbar */
+.navbar-nav .nav-item:last-child img {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+/* Estilos para os itens da navbar */
+.navbar-nav .nav-item img {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.navbar-nav .nav-item:hover img {
+  transform: rotate(60deg);
+}
+
+.navbar-nav .nav-item:last-child a {
+  padding: 0;
+}
+
+#themeToggle {
+  cursor: pointer;
+}
+
+/* Estilos para a Seção Home */
+#home {
+  padding-top: 115px;
+  color: var(--main-text-color);
+  background-color: var(--main-bg-color);
+}
+
+/* Estilos para o título da Seção Home */
+#home h1 {
+  font-family: var(--montserrat);
+}
+
+/* Estilos para o texto da Seção Home */
+#home p {
+  font-family: var(--almaria);
+}
+
+/* Estilo do card da seção home */
+#home .card {
+  background-color: var(--bg-color);
+  border: 2px solid var(--border-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#home .card h1,
+#home .card p {
+  color: var(--text-color);
+}
+
+/* Estilos para a Seção de Login */
+#login {
+  padding-top: 115px;
+  color: var(--main-text-color);
+  background-color: var(--main-bg-color);
+}
+
+/* Estilos para o título da Seção de Login */
+#login h1 {
+  font-family: var(--montserrat);
+}
+
+/* Estilos para o formulário da Seção de Login */
+#login form,
+p {
+  font-family: var(--almaria);
+}
+
+#login .card {
+  background-color: var(--bg-color);
+  border: 2px solid var(--border-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#login .card h1,
+p {
+  color: var(--text-color);
+}
+
+/* Estilos para os campos de input do formulário */
+#login input {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--input-bg-color);
+  border: none;
+  color: var(--text-color);
+}
+
+#login input::placeholder {
+  color: var(--main-text-color);
+}
+
+/* Estilos para o botão de enviar do formulário */
+#login .btn {
+  background-color: var(--link-hover-color);
+  color: #d6d6d6;
+  width: 100%; /* Definindo a largura do botão */
+  max-width: 400px; /* Definindo a largura máxima */
+  margin-left: auto; /* Alinha o botão à direita */
+  margin-right: auto; /* Alinha o botão à esquerda */
+}
+
+#login .btn:hover {
+  background-color: var(--button-hover);
+}
+
+#formulario {
+  color: var(--main-text-color);
+  background-color: var(--main-bg-color);
+}
+
+#formulario .card {
+  background-color: var(--bg-color);
+  border: 2px solid var(--border-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: var(--main-text-color);
+}
+
+#formulario .card input {
+  border: 1px solid var(--border-color);
+}
+#formulario .card textarea {
+  border: 1px solid var(--border-color);
+}
+#formulario .card select {
+  border: 1px solid var(--border-color);
+}
+
+#formulario .btn {
+  width: 100%;
+}
+
+.form-img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos para a Seção Sobre nós */
+#about {
+  scroll-margin-top: 100px;
+}
+
+#about .card {
+  background-color: var(--bg-color);
+  border: 2px solid var(--border-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: var(--text-color);
+}
+
+@media (max-width: 1199px) {
+  #about {
+    scroll-margin-top: 66px;
+  }
+}
+
+/* Estilos para o título da Seção Sobre nós */
+.section-title {
+  text-align: center;
+  padding: 30px 0;
+  margin-bottom: 30px;
+  position: relative;
+  font-family: var(--montserrat);
+}
+
+/* Estilos para o texto da Seção Sobre nós */
+.section-title p {
+  font-family: var(--almaria);
+  margin-bottom: 0;
+  position: relative;
+  z-index: 2;
+}
+
+/* Estilos para o título da Seção de Conteúdo */
+.section-title h2 {
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.about .content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: var(--montserrat);
+}
+
+/* Estilos para a lista de itens da Seção de Conteúdo */
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Estilos para os itens da lista na Seção de Conteúdo */
+.about .content ul li {
+  padding-bottom: 12px;
+}
+
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+
+.checks {
+  filter: var(--check-color);
+}
+
+/* Estilos para a imagem da Seção Sobre nós */
+.about-img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid var(--border-color);
+}
+
+/* Estilos para o checkin na Seção Sobre nós */
+.about span {
+  font-family: var(--almaria);
+}
+
+#services .card {
+  background-color: var(--bg-color);
+  border: 2px solid var(--border-color);
+  color: var(--text-color);
+}
+
+.services .service-item {
+  text-align: center;
+  border: 2px solid var(--border-color);
+  padding: 80px 20px;
+  transition: all ease-in-out 0.3s;
+  height: 100%;
+}
+.services .service-item .icon {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  background: var(--service-item-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: 0.3s;
+  transform-style: preserve-3d;
+}
+.services .service-item .icon img {
+  font-size: 28px;
+  transition: ease-in-out 0.3s;
+}
+.services .service-item .icon::before {
+  position: absolute;
+  content: "";
+  left: -8px;
+  top: -8px;
+  height: 100%;
+  width: 100%;
+  background: var(--item-shadow);
+  transition: all 0.3s ease-out 0s;
+  transform: translateZ(-1px);
+}
+.services .service-item h3 {
+  font-weight: 700;
+  margin: 10px 0 15px 0;
+  font-size: 22px;
+  font-family: var(--montserrat);
+}
+.services .service-item p {
+  line-height: 24px;
+  font-size: 17px;
+  margin-bottom: 0;
+  font-family: var(--almaria);
+}
+.services .service-item:hover {
+  background: var(--service-item-bg);
+  border-color: var(--service-item-bg);
+  cursor: pointer;
+}
+.services .service-item:hover .icon {
+  background: #d6d6d6;
+}
+.services .service-item:hover .icon img {
+  filter: brightness(0) saturate(100%) hue-rotate(180deg);
+}
+.services .service-item:hover .icon::before {
+  background: #ada7a7;
+}
+.services .service-item:hover h3,
+.services .service-item:hover p {
+  color: #d6d6d6;
+}
+
+#team .card {
+  background-color: var(--bg-color);
+  border: 2px solid var(--border-color);
+  color: var(--text-color);
+}
+#team .card h1{
+  font-size: 20px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  width: 5%;
+}
+
+#contacts .card {
+  background-color: var(--bg-color);
+  border: 2px solid var(--border-color);
+  color: var(--text-color);
+}
+
+#contacts .card .accordion-item {
+  background-color: var(--accordion-color);
+  border: 1px solid var(--border-color);
+}
+
+#contacts .card .accordion-item p {
+  font-family: var(--almaria);
+}
+
+#contacts .card .accordion-button {
+  background-color: var(--accordion-color);
+  color: var(--text-color);
+}
+
+#contacts #lateralCard {
+  background-color: var(--accordion-color);
+  color: var(--text-color);
+}
+
+#contacts .accordion-header {
+  font-family: var(--montserrat);
+}
+
+#contacts form,
+p {
+  font-family: var(--almaria);
+}
+
+#contacts input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--input-bg-color);
+  border: none;
+  color: var(--text-color);
+}
+
+#contacts input::placeholder {
+  color: var(--main-text-color);
+}
+
+#contacts textarea::placeholder {
+  color: var(--main-text-color);
+}
+
+#contacts form .btn {
+  background-color: var(--link-hover-color);
+  color: #d6d6d6;
+  width: 100%; /* Definindo a largura do botão */
+  max-width: 400px; /* Definindo a largura máxima */
+  margin-left: auto; /* Alinha o botão à direita */
+  margin-right: auto; /* Alinha o botão à esquerda */
+}
+
+#contacts .btn:hover {
+  background-color: var(--button-hover);
+}
+
+#contacts .img-fluid {
+  max-width: 100%;
+  border: 2px solid var(--border-color);
+}
+
+footer .card {
+  background-color: var(--bg-color);
+  border: 2px solid var(--border-color);
+  color: var(--text-color);
+}
+
+/* Estilos para os links do footer */
+footer .list-inline-item a {
+  color: var(--link-color);
+  font-family: var(--almaria);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer .list-inline-item a:hover {
+  color: var(--link-hover-color);
+}
+
+
+/* Margem top da navabar 991 */
+
+
+/* Carrosel uma imagem abaixo de 768 */

@@ -1,0 +1,121 @@
+.cabecalho {
+    padding-left: 5%;/* lateral destancia*/
+}
+
+header {
+    background-image: url(terra-logo.png);/* linkagem de imagem estilo css*/
+    background-size: 150px;/*tamanho da imagem de cima */
+    background-repeat: no-repeat;/*para foto nao repetir*/
+    background-position: center center;/* centro horinzontal e vertical */
+    width: 1400px;/* tamanho */
+    border: 2px solid #4caf50;/*borda*/
+    border-radius: 100px;/*curva da borda*/
+    background-color: rgba(255, 255, 255, 0.733);/*cordo fundo*/
+    display: flex;/* Define um layout flexível */
+    padding-bottom: 5%;/* Adiciona espaço na parte inferior */
+}
+
+h1 {
+    font-size: 45px;/*tamanho da fonte*/
+    position: absolute;/*pocisao absoluta em ralçao a relativa */
+    color: rgb(98, 207, 126);/*cor da letra*/
+    padding-left: 17%;/*distacia da esquerda */
+    padding-top: 2%;/*distacia de cima */
+}
+
+nav {
+    padding-left: 60%;/*distacia da esquerda */
+    padding-top: 4%;/*distacia de cima */
+}
+
+nav li {
+    font-family: Arial;
+    font-size: 20px;/*tamanho da fonte*/
+    margin: 0 50px 0 0;/*distacia da direita */
+    display: inline-block;/*qubrando a lista */
+}
+
+nav a {
+    text-decoration: none;/* sem decoração*/
+    color: black;/*cor da letra*/
+}
+
+nav a:hover {
+    color: rgb(164, 253, 31);/*cor da letra*/
+    text-decoration: underline;/* sem decoração*/
+}
+
+body {
+    background-color: #45a049;/*cor d ofundo*/
+    background-image: url(recicla.png);/*imagem estilo css*/
+    background-repeat: no-repeat;/*para a repeticao da imagem*/
+    background-position: center center;/*coloca a imagem no centro*/
+    background-size: 900px;/*tamanho da imagem*/
+    font-family: Arial;/*estilo da font*/
+}
+
+main {
+    padding-top: 5%;/*distacia de cima */
+    padding-left: 38%;/*distacia da esquerda */
+}
+
+.caixa-de-cadastro {
+    background-color: rgb(255, 255, 255, 0.9);/*cor do fundo*/
+    border: 1px solid #ccc;/*estilo de borda */
+    padding: 20px;/* distacia todos os lados*/
+    border-radius: 8px;/*curva borda*/
+    width: 300px;/*tamanho pixeisl*/
+}
+
+h2 {
+    text-align: center;/*texto no centro*/
+    color: #333;/*cor da letra*/
+}
+/* mechendo no fomulario*/
+form {
+    display: flex;/*quebra as linhas */
+    flex-direction: column;/*deixa como coluna*/
+}
+
+label {
+    margin-bottom: 8px;/*margin de baixo*/
+}
+/*estilizando o form*/
+.campo-form {
+    padding: 8px;/*distacia de 8px*/
+    margin-bottom: 16px;/*margem de baixo*/
+    border: 1px solid #ccc;/*estilo de borda*/
+    border-radius: 4px;/*curvatura da borda*/
+}
+/* estilizando o botão */
+form a{
+    text-align: center;
+    text-decoration: none;
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;/*distancia de 10px */
+    border: none;/*tira aborda do boão*/
+    border-radius: 4px;/*curvatura da borda */
+}
+/* quando o mouse passar por cima dp botão */
+button:hover {
+    background-color: #45a049;
+}
+/* desing ooda pé */
+footer {
+    text-align: center;/* texto centro*/
+    font-style: italic;/*fonte*/
+    font-weight: bold;/*negrito*/
+    font-size: 30px;/* tamanho da fonte*/
+    border-radius: 1.5%;/* curvatura da borda */
+    width: 1430px;/*qnt de pixeis*/
+    padding: 50px;/*diistancia de 50px */
+}
+/*estilo class frase*/
+.roda-pe {
+    padding-top: 10%;/* distacia de cima*/ 
+}
+/*estilo clas frase*/
+.roda-pe-frase {
+    font-size: 25px;/* tamanho da fonte*/
+}

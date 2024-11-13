@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="LADS page" />
+    <link rel="icon" href="./assets/images/icon.ico" type="image/x-icon">
+    <title>LADS-IESGO</title>
+
+    <!-- Styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+  </head>
+
+  <body>
+      <!-- Inicio Header -->
+      <header>
+        <!-- Inicio Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-color navbar-dark py-3 fixed-top">
+            <div class="container">
+                <a class="logo" href="index.html"><img src="./assets/images/logo.webp" alt="logo" style="width: 60px;"></a>
+                <button
+                class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbar-mobile"
+                title="Abrir menu De navegação">
+                <span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbar-mobile">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link link-hover me-2" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-hover me-2" href="#about">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-hover me-2" href="#services">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-hover me-2" href="#team">Equipe</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-hover me-4" href="#contacts">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="themeToggle" class="nav-link me-4 "><img src="./assets/images/sun-50.svg" alt="sunAndMoon"></a>
+                        </li>
+                    </ul>
+                    <img id="iesgoImage" class="img-fluid" src="./assets/images/iesgo-alt.webp" style="width: 100px;" alt="iesgoLogo">
+                </div>
+            </div>
+        </nav> <!-- Fim da Navbar-->
+    </header> <!-- Fim do Header -->
+
+    <!-- Seção Home -->
+    <section id="home" class="container mt-5">
+        <div class="text-center card">
+            <h1 class="display-1 fw-bold ">Laboratório de <br>Desenvolvimento <br>de Software</h1>
+            <p class="lead">O LADS é um laboratório de estudos e práticas em<br>desenvolvimento de software, 
+            proporcionando aos estudantes<br> experiências práticas e aprendizado em ambiente real.</p>
+        </div>
+    </section> <!-- Fim Da Home -->
+
+    <!-- Seção Login -->
+    <section id="login" class="container mb-5">
+        <div class="card">
+            <h1 class="display-6 fw-medium text-center mt-3">Login</h1>
+            <p class="lead text-center m-0">Requisição de projetos e sistemas,destinado apenas a Coordenadores de Cursos da IESGO</p>
+            <form id="loginForm" class="mt-3 px-5">
+                <div class="mb-4">
+                    <input type="text" class="form-control" id="email" placeholder="Email">
+                </div>
+                <div class="mb-3">
+                    <input type="password" class="form-control" id="password" placeholder="Senha">
+                </div>
+                <div class="d-grid mt-4 mb-4">
+                    <button type="submit" class="btn fw-bold mx-auto">Entrar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Fim Seção Login -->
+    
+    <!-- Seção Formulário -->
+    <section id="formulario" class="container mb-5 ">
+        <div class="card">
+            <div class="container section-title m-0">
+                <h2 class="display-6 fw-medium m-0">Formulário</h2>
+            </div>
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-6 order-lg-2">
+                        <img id="logoForm" src="assets/images/logoImagem-dark.webp" class="img-fluid form-img mt-4" alt="iesgoImage">
+                    </div>
+                    <div class="col-lg-6 content">
+                       <form id="myForm">
+
+                        <div class="mb-3">
+                            <label for="nome_coordenador" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="nome_coordenador" name="nome_coordenador" placeholder="Nome do coordenador">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="curso" class="form-label">Curso</label>
+                            <input type="text" class="form-control" id="curso" name="curso" placeholder="Nome do curso" >
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="nome_projeto" class="form-label">Projeto</label>
+                            <input type="text" class="form-control" id="nome_projeto" name="nome_projeto" placeholder="Nome do projeto">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="descricao" class="form-label">Descrição</label>
+                            <textarea class="form-control" id="descricao" name="descricao" rows="5" placeholder="Fale um pouco sobre o projeto"></textarea>
+                        </div>
+
+                        <div class="row mb-3 ">
+
+                            <div class="col">
+                                <label for="agendamento" class="form-label">Agendamento</label>
+                                <input type="date" class="form-control" id="agendamento" name="agendamento">
+                            </div>
+
+                            <div class="col">
+                                <label for="responsavel_entrevista" class="form-label">Responsável</label>
+                                <input type="text" class="form-control" id="responsavel_entrevista" name="responsavel_entrevista">
+                            </div>
+
+                            <div class="col">
+                                <label for="email_responsavel" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email_responsavel" name="email_responsavel">
+                            </div>
+                        </div>
+                        <div class="row mb-3 ">
+                            <div class="col">
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-danger" onclick="limparCampos()">Limpar</button>
+                            </div>
+                        </div>
+                       </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Conteudo Principal -->
+    <main class="main">
+
+        <!-- Seção Sobre nos -->
+        <section id="about" class="about container mb-5 ">
+
+            <!-- Titulo da seção -->
+            <div class="card">
+                <div class="container section-title m-0">
+                    <h2 class="display-6 fw-medium">Sobre Nós</h2>
+                    <p class="lead">O LADS é um espaço dedicado ao aprendizado e prática em desenvolvimento de software para os estudantes</p>
+                </div><!-- Fim do titulo -->
+                <div class="container">
+                    <div class="row gy-4">
+                        <div class="col-lg-6 order-lg-2">
+                            <img src="assets/images/iesgoImagem.webp" class="img-fluid about-img mb-3 " alt="iesgoImage">
+                        </div>
+                        <div class="col-lg-6 content">
+                            <h3>O LADS é mais do que apenas um espaço de aprendizado</h3>
+                            <p class="fst-italic">Aqui, os estudantes têm a oportunidade de aplicar seus conhecimentos teóricos em projetos práticos, 
+                            trabalhando em equipe e enfrentando desafios reais do mundo do desenvolvimento de software</p>
+                            <ul>
+                                <li><img class="checks" src="./assets/images/check-circle.svg" alt="check1"> <span>Foco na aprendizagem prática e aplicação de conhecimentos em projetos reais.</span></li>
+                                <li><img class="checks" src="./assets/images/check-circle.svg" alt="check2"> <span>Ambiente colaborativo que incentiva a inovação e a criatividade.</span></li>
+                                <li><img class="checks" src="./assets/images/check-circle.svg" alt="check3"> <span>Trabalho em equipe para resolver desafios reais de software.</li></span></li>
+                                <li><img class="checks" src="./assets/images/check-circle.svg" alt="check4"> <span>Desenvolvimento de sistemas personalizados.</li></span></li>
+                                <li><img class="checks" src="./assets/images/check-circle.svg" alt="check5"> <span>Utilização de tecnologias modernas.</li></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section><!-- Fim da seção sobre nos -->
+    
+    <!-- Seção Serviços -->
+    <section id="services" class="services container mb-5 ">
+
+        <!-- Titulo da seção -->
+        <div class="card py-3">
+            <div class="container section-title m-0">
+                <h2 class="display-6 fw-medium ">Serviços</h2>
+                <p class="lead">Oferecemos uma variedade de serviços para atender às necessidades dos cursos e coordenadores</p>
+            </div><!-- Fim do titulo-->
+
+            <div class="container">
+                <div class="row gy-4">
+                    
+                    <!-- Card 1 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-item position-relative">
+                            <div class="icon">
+                                <img src="./assets/images/api-svgrepo-com.svg" alt="apiImage">
+                            </div>
+                            <h3>API's</h3>
+                            <p>Criação e integração de APIs robustas para conectar diferentes sistemas.</p>
+                        </div>
+                    </div><!-- Fim Card 1-->
+                    
+                    <!-- Card 2 -->
+                    <div class="col-lg-4 col-md-6" >
+                        <div class="service-item position-relative">
+                            <div class="icon">
+                                <img src="./assets/images/phone-fill.svg" alt="phoneImage">
+                            </div>
+                            <h3>Desenvolvimento Mobile</h3>
+                            <p>Desenvolvimento Mobile, proporcionando soluções sob medida para suas necessidades digitais.</p>
+                        </div>
+                    </div><!-- Fim Card 2 -->
+                    
+                    <!-- Card 3 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-item position-relative">
+                            <div class="icon">
+                                <img src="./assets/images/browser-chrome.svg" alt="browserImage">
+                            </div>
+                            <h3>Serviços Web</h3>
+                            <p>Desenvolvimento de aplicações web personalizadas que atendem suas necessidades.</p>
+                        </div>
+                    </div><!-- Fim Card 3 -->
+                    
+                    <!-- Card 4 -->
+                    <div class="col-lg-4 col-md-6" >
+                        <div class="service-item position-relative">
+                            <div class="icon">
+                                <img src="./assets/images/database-fill.svg" alt="databaseImage">
+                            </div>
+                            <h3>Gerência de Dados</h3>
+                            <p>Implementação de soluções de gerenciamento de dados eficientes e seguras.</p>
+                        </div>
+                    </div><!-- Fim Card 4 -->
+                    
+                    <!-- Card 5 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-item position-relative">
+                            <div class="icon">
+                                <img src="./assets/images/gear-fill.svg" alt="gearImage">
+                            </div>
+                            <h3>Automações</h3>
+                            <p>Criação de ferramentas personalizadas para automatizar processos.</p>
+                        </div>
+                    </div><!-- Fim Card 5 -->
+
+                    <!-- Card 6 -->
+                    <div class="col-lg-4 col-md-6" >
+                        <div class="service-item position-relative">
+                            <div class="icon">
+                                <img src="./assets/images/three-dots.svg" alt="dotsImage">
+                            </div>
+                            <h3>Outros</h3>
+                            <p>Chatbots<br>Assistências<br>Integrações e mais.</p>
+                        </div>
+                    </div><!-- Fim Card 6 -->
+                </div>
+            </div>
+        </div>
+    </section><!-- Fim da seção serviços --> 
+    
+    <!-- Seção Equipe -->
+    <section id="team" class="container mb-5 ">
+        <div class="card">
+            
+            <!-- Titulo da seção -->
+            <div class="container section-title">
+                <h2 class="display-6 fw-medium ">Equipe</h2>
+                <p class="lead">A equipe do LADS é composta por estudantes do Curso de Sistemas da Informação</p>
+            </div>
+            
+            <!-- Iniciando o carrossel -->
+            <div id="team-carousel" class="carousel slide mb-3 text-center" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    
+                    <!-- Primeiras 4 imagens -->
+                    <div class="carousel-item active">
+                        <div class="row row-cols-1 row-cols-md-4 g-4">
+                            
+                            <!-- Membro 1 -->
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="./assets/images/iesgoImagem.webp" class="card-img-top" alt="Membro 1">
+                                    <div class="card-body">
+                                        <h1 class="card-title">Teste1</h1>
+                                        <p class="card-text">5º Semestre</p>
+                                        <a href="./index.html"><img src="./assets/images/instagram-svgrepo-com.svg" class="instagram-team" alt="instagram-logo"></a>
+                                        <a href="./index.html"><img src="./assets/images/facebook-svgrepo-com.svg" class="facebook-team" alt="facebook-logo"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Membro 2 -->
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="./assets/images/iesgoImagem.webp" class="card-img-top" alt="Membro 2">
+                                    <div class="card-body">
+                                        <h1 class="card-title">Teste2</h1>
+                                        <p class="card-text">5º Semestre</p>
+                                        <a href="./index.html"><img src="./assets/images/instagram-svgrepo-com.svg" class="instagram-team" alt="instagram-logo"></a>
+                                        <a href="./index.html"><img src="./assets/images/facebook-svgrepo-com.svg" class="facebook-team" alt="facebook-logo"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Membro 3 -->
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="./assets/images/iesgoImagem.webp" class="card-img-top" alt="Membro 3">
+                                    <div class="card-body">
+                                        <h1 class="card-title">Teste3</h1>
+                                        <p class="card-text">5º Semestre</p>
+                                        <a href="./index.html"><img src="./assets/images/instagram-svgrepo-com.svg" class="instagram-team" alt="instagram-logo"></a>
+                                        <a href="./index.html"><img src="./assets/images/facebook-svgrepo-com.svg" class="facebook-team" alt="facebook-logo"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Membro 4 -->
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="./assets/images/iesgoImagem.webp" class="card-img-top" alt="Membro 4">
+                                    <div class="card-body">
+                                        <h1 class="card-title">Teste4</h1>
+                                        <p class="card-text">5º Semestre</p>
+                                        <a href="./index.html"><img src="./assets/images/instagram-svgrepo-com.svg" class="instagram-team" alt="instagram-logo"></a>
+                                        <a href="./index.html"><img src="./assets/images/facebook-svgrepo-com.svg" class="facebook-team" alt="facebook-logo"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fim das 4 primeiras imagens -->
+                    
+                    <!-- Proximos 4 membros -->
+                    <div class="carousel-item">
+                        <div class="row row-cols-1 row-cols-md-4 g-4">
+
+                            <!-- Membro 5 -->
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="./assets/images/iesgoImagem.webp" class="card-img-top" alt="Membro 5">
+                                    <div class="card-body">
+                                        <h1 class="card-title">Teste5</h1>
+                                        <p class="card-text">5º Semestre</p>
+                                        <a href="./index.html"><img src="./assets/images/instagram-svgrepo-com.svg" class="instagram-team" alt="instagram-logo"></a>
+                                        <a href="./index.html"><img src="./assets/images/facebook-svgrepo-com.svg" class="facebook-team" alt="facebook-logo"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Membro 6 -->
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="./assets/images/iesgoImagem.webp" class="card-img-top" alt="Membro 6">
+                                    <div class="card-body">
+                                        <h1 class="card-title">Teste6</h1>
+                                        <p class="card-text">5º Semestre</p>
+                                        <a href="./index.html"><img src="./assets/images/instagram-svgrepo-com.svg" class="instagram-team" alt="instagram-logo"></a>
+                                        <a href="./index.html"><img src="./assets/images/facebook-svgrepo-com.svg" class="facebook-team" alt="facebook-logo"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Membro 7 -->
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="./assets/images/iesgoImagem.webp" class="card-img-top" alt="Membro 7">
+                                    <div class="card-body">
+                                        <h1 class="card-title">Teste7</h1>
+                                        <p class="card-text">5º Semestre</p>
+                                        <a href="./index.html"><img src="./assets/images/instagram-svgrepo-com.svg" class="instagram-team" alt="instagram-logo"></a>
+                                        <a href="./index.html"><img src="./assets/images/facebook-svgrepo-com.svg" class="facebook-team" alt="facebook-logo"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Membro 8 -->
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="./assets/images/iesgoImagem.webp" class="card-img-top" alt="Membro 8">
+                                    <div class="card-body">
+                                        <h1 class="card-title">Teste8</h1>
+                                        <p class="card-text">5º Semestre</p>
+                                        <a href="./index.html"><img src="./assets/images/instagram-svgrepo-com.svg" class="instagram-team" alt="instagram-logo"></a>
+                                        <a href="./index.html"><img src="./assets/images/facebook-svgrepo-com.svg" class="facebook-team" alt="facebook-logo"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- Fim dos cards-->
+                    
+                    <!-- Adicionar mais membros,utilizar mesmo codigo acima -->
+                </div>
+                
+                <!-- Controles de navegação -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#team-carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#team-carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div><!-- Carrossel Finalizado -->
+        </div>
+    </section><!-- Fim da seção equipe -->
+    
+    <!-- Seção Contatos -->
+    <section id="contacts" class="container mb-5 ">
+            <div class="card">
+                <div class="container section-title">
+                    <h2 class="display-6 fw-medium">Contatos</h2>
+                    <p class="lead">Entre em contato conosco. Se você tiver dúvidas, sugestões ou precisar de mais informações sobre o LADS </p>
+                </div>
+                <div class="row gx-5 ">
+                    <div class="col-xl-8">
+                        <div class="accordion mb-5" id="accordionExample">
+                            <!-- Conteúdo do primeiro FAQ-->
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="headingOne">
+                                    <button
+                                    class="accordion-button fw-medium "
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne">
+                                    #1 - Quais informações devo fornecer ao fazer um pedido de projeto?
+                                    </button>
+                                </h3>
+                                <div
+                                class="accordion-collapse collapse show"
+                                id="collapseOne"
+                                data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Ao fazer um pedido de projeto, é necessário fornecer detalhes como o objetivo do projeto, 
+                                        requisitos,o curso e qualquer outra informação relevante.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="headingTwo">
+                                    <button
+                                    class="accordion-button collapsed fw-medium "
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo">
+                                    #2 - Quais tipos de projetos o Laboratório de Desenvolvimento de Software (LADS) geralmente aceita?
+                                    </button>
+                                </h3>
+                            <div
+                            class="accordion-collapse collapse"
+                            id="collapseTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>O LADS geralmente aceita uma ampla variedade de projetos de desenvolvimento de software. 
+                                Isso pode incluir desde a criação de aplicativos móveis e web até sistemas 
+                                de gerenciamento de banco de dados e soluções de automação.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="headingThree">
+                            <button
+                            class="accordion-button collapsed fw-medium "
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree">
+                            #3 - Quais são os objetivos do LADS?
+                            </button>
+                        </h3>
+                        <div
+                        class="accordion-collapse collapse"
+                        id="collapseThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Funcionando como um estágio dentro da faculdade, o LADS permite que os alunos apliquem seus conhecimentos 
+                            teóricos em projetos reais, desenvolvendo softwares para os demais cursos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-4">
+            <!-- Conteúdo do card na lateral -->
+            <div id="lateralCard" class="card border-0">
+                <div class="card-body p-4 py-lg-5">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <div class="text-center">
+                            <div class="h6 fw-bolder">Tem mais perguntas?</div>
+                            <p class="mb-4">Entre em contato<br/>
+                                <a href="#!">ladsiesgo@iesgo.edu.br</a>
+                            </p>
+                            <div class="h6 fw-bolder">Nos siga nas redes sociais</div>
+                            <a class="fs-5 px-2 link-dark" href="https://www.instagram.com/lads.iesgo/"><img src="./assets/images/instagram-svgrepo-com.svg" style="width: 15%" alt="instagram-Icon"/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    
+        <div class="row">
+            <!-- Mapa de Localização -->
+            <div class="col-lg-6 mt-5 mt-lg-0">
+                <iframe title="Localização da Iesgo" style="width: 100%;height: 100%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3843.6727334353027!2d-47.32070442159742!3d-15.555665189739623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9350a2f3b7b7535f%3A0x783fe51ec29c836!2sFaculdades%20IESGO!5e0!3m2!1spt-BR!2sbr!4v1714262414916!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+            <!-- Formulário de Contato -->
+            <div class="col-lg-6 mt-5 mt-lg-0">
+                <div class="text-center">
+                    <h2 class="fw-bolder mb-4">Entre em Contato</h2>
+                    <form class="mb-3">
+                        <div class="mb-3">
+                            <input type="text" id="nome" placeholder="Seu nome">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" id="email_contato" placeholder="Seu email">
+                        </div>
+                        <div class="mb-3">
+                            <textarea id="mensagem" rows="4" placeholder="Sua mensagem"></textarea>
+                        </div>
+                        <button type="submit" class="btn">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="container">
+    <div class="card">
+        <div class="card-body mt-3 ">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <p>© Copyright LADS 2024 Todos Os Direitos Reservados</p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-inline text-md-end">
+                        <li class="list-inline-item"><a href="#home">Home</a></li>
+                        <li class="list-inline-item"><a href="#about">Sobre</a></li>
+                        <li class="list-inline-item"><a href="#services">Serviços</a></li>
+                        <li class="list-inline-item"><a href="#team">Equipe</a></li>
+                        <li class="list-inline-item"><a href="#contacts">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./assets/js/switch-mode.js"></script>
+    <script src="./assets/js/cleanForm.js"></script>
+    <script src="./assets/js/date.js"></script>
+    <script src="./assets/js/login.js"></script>
+    <script src="./assets/js/expire.js"></script>
+    <script src="./assets/js/form.js"></script>
+
+  </body>
+</html>

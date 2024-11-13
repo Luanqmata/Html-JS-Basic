@@ -1,0 +1,80 @@
+h1{
+	font-style: italic;
+	font-size: 45px; 
+	color: lawngreen;
+	text-align: center;
+	background-color: darkgreen;
+}
+h2{
+	font-size: 	40px;
+	color: lawngreen;
+	background-color: darkgreen;
+	font-style: oblique	;
+
+}
+h3{
+	font-size: 	40px;
+
+}
+h4{
+	font-size: 	40px;
+	background-color: seagreen;
+
+}
+h5{
+	font-size: 30px;
+	color: white;
+}
+h6{
+	font-size: 50px;
+	text-align: center;
+	font-style: italic;
+	
+}
+#red{
+	color: rgb(235, 23, 23);
+	font-weight: normal;
+	font-style: oblique;
+}
+#blue{
+		color: rgb(48, 124, 236);
+		font-weight: normal;
+		font-style: italic;
+	}
+#titulo{
+	font-size: 35px;
+	font-style: oblique;
+	color: rgb(237, 240, 51);
+}
+#energia{
+	font-size: 35px;
+	font-weight: normal;
+	color: black;
+	background-color: seagreen;
+	
+}
+#numeros{
+	font-size: 35px;
+	font-weight: normal;
+	color: black;
+	background-color: rgb(119, 56, 179);
+}
+#oculto{
+	color: #000000;
+	font-size: large;
+}
+body{
+	
+	background: linear-gradient(to bottom, #006400, #000000);
+	text-align: center;
+
+}
+ol{
+	color: darkgreen;
+
+}
+li{ 
+	font-size: 25px; 
+	text-align: center;
+	
+ }

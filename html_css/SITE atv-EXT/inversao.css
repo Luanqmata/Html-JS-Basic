@@ -1,0 +1,166 @@
+/* Define a imagem de fundo para o corpo da página */
+body {
+    background-image: url(terra.png); /* fundo imagem estilo css para colocar no fundo*/
+    background-repeat: no-repeat; /* para nao repetir a imagem */
+    background-size: contain; /* ou use "cover" para cobrir o fundo inteiro */
+    background-position: center center; /* centraliza a imagem horizontal e verticalmente */
+    height: 100vh; /* garante que a imagem ocupe toda a altura da viewport */
+    margin: 0; /* remove a margem padrão do corpo da página */
+}
+/* Define um layout flexível para o cabeçalho */
+header {
+    display: flex; /* Define um layout flexível */
+    padding-bottom: 14%; /* Adiciona espaço na parte inferior */
+}
+
+
+/* Estilo para o título principal h1 */
+h1 {
+    font-weight: bold;/*negrito*/
+    font-size: 45px; /* tamanho da letra */
+    position: absolute;/* posição absoluta em relção a raletiva */
+    color: rgb(89, 221, 122);/* cor verde no rgb*/
+    padding-left: 17%;/* espaçamento da esquerda de 17% */
+    padding-top: 1%;/* espaçamento de cima */
+}
+
+/* Estilo para a barra de navegação */
+nav {
+    padding-left: 45%;/* espaçamento de 45% da esquerda */
+    padding-top: 2.5%;/* espaçamento de 2.5% de cima */ 
+}
+
+/* Estilo para os itens da lista de navegação */
+nav li {
+    font-family: Arial; /* estilo da fonte */
+    font-size: 20px; /* tamanho da fonte */
+    margin: 0 50px 0 0;/* margem pra baixo de 50 pixels */
+    display: inline-block; /* quebra a linha da li fazendo uma do lado da outra */
+}
+
+/* Estilo para os links de navegação */
+nav a {
+    text-decoration: none; /* tira decoração do texto */
+    color: black; /* coloca cor preta */
+}
+
+/* Estilo para o botão na barra de navegação */
+.botao {
+    background-color: rgb(79, 155, 98);/* cor do fundo */
+    border-radius: 10px;/* curvatura da borda */
+    padding: 6px 20px;/*distacia pra cima 6 px pro lado 20 px */
+    border: 2px solid rgb(79, 155, 98);/* crio uma borda com 2 pixel de largura solida e verde no rgb*/
+}
+
+/* Quando o mouse passar por cima  */
+nav .botao:hover {
+    border: 2px solid rgb(186, 253, 84);/* crio uma borda com 2 pixel de largura solida e verde no rgb*/
+    background-color: rgb(186, 253, 84);/* cor do fundo do botão*/
+    color: white;/* letra branca */
+    text-decoration: underline;/* sublinhado*/
+}
+
+/* Outros estilos para links e botões */
+.branco {
+    color: white;/* cor da letra branca*/
+}
+/*quando o mouse ppassar por cima */
+nav .branco:hover {
+    color: white;/* cor da letra branca*/
+}
+/*quando o mouse ppassar por cima */
+nav a:hover {
+    color: rgb(164, 253, 31);/* cor da letra verde */
+    text-decoration: underline;/*sublinhado*/
+}
+/*-----------------------------*/
+h2{
+    text-align: center;
+    font-size: 40px;
+    color: black;
+}
+h2:hover{
+    font-size: 80px;
+    color: green;
+}
+.titulo1{
+    padding-top: 20%;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 2%;
+}
+.inversa1{
+    font-weight: bold;
+    font-style: italic;
+    padding-left: 5%;
+    font-size: 25px;
+}
+.inversa2{
+    font-weight: bold;
+    font-style: italic;
+    padding-left: 2%;
+    font-size: 25px;
+}
+#campo-magnetico{
+    width: 600px;
+    padding-left: 7%;
+}
+.foto-dados{
+    display: flex;
+}
+h3{
+    padding-left: 2%;
+    font-size: 25px;
+    font-style: oblique;
+}
+.lista{
+    font-size: 19px;
+    padding-bottom: 2%;
+}
+.lista em{
+    font-size: 20px;
+    font-weight: bold;
+}
+.titulo2{
+    padding-top: 5%;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 2%;
+}
+#el-nino{
+    width: 60%;
+}
+.foto-dados2{
+    display: flex;
+}
+.foto-dados2 li{
+    font-style: italic;
+    font-size: 40px;
+    padding-top: 20%;
+}
+#ultima{
+    padding-top: 2%;
+    width: 700px;
+    padding-left: 28%;
+}
+/* desing ooda pé */
+footer {
+    background-image: url(fundo-verde.jpg);
+    text-align: center;/* texto centro*/
+    font-style: italic;/*fonte*/
+    font-weight: bold;/*negrito*/
+    font-size: 30px;/* tamanho da fonte*/
+    border-radius: 1.5%;/* curvatura da borda */
+    width: 1430px;/*qnt de pixeis*/
+    padding: 50px;/*diistancia de 50px */
+}
+/*estilo class frase*/
+.roda-pe {
+    padding-top: 10%;/* distacia de cima*/ 
+}
+/*estilo clas frase*/
+.roda-pe-frase {
+    font-size: 25px;/* tamanho da fonte*/
+}

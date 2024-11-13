@@ -1,0 +1,206 @@
+/* Define a imagem de fundo para o corpo da página */
+body {
+    background-image: url(maeterra.webp); /* fundo imagem estilo css para colocar no fundo*/
+    background-repeat: no-repeat; /* para nao repetir a imagem */
+    background-size: contain; /* ou use "cover" para cobrir o fundo inteiro */
+    background-position: center center; /* centraliza a imagem horizontal e verticalmente */
+    height: 100vh; /* garante que a imagem ocupe toda a altura da viewport */
+    margin: 0; /* remove a margem padrão do corpo da página */
+}
+/* Define um layout flexível para o cabeçalho */
+header {
+    display: flex; /* Define um layout flexível */
+    padding-bottom: 20%; /* Adiciona espaço na parte inferior */
+}
+
+
+/* Estilo para o título principal h1 */
+h1 {
+    font-weight: bold;/*negrito*/
+    font-size: 45px; /* tamanho da letra */
+    position: absolute;/* posição absoluta em relção a raletiva */
+    color: rgb(89, 221, 122);/* cor verde no rgb*/
+    padding-left: 17%;/* espaçamento da esquerda de 17% */
+    padding-top: 1%;/* espaçamento de cima */
+}
+
+/* Estilo para a barra de navegação */
+nav {
+    padding-left: 55%;/* espaçamento de 45% da esquerda */
+    padding-top: 2.5%;/* espaçamento de 2.5% de cima */ 
+}
+
+/* Estilo para os itens da lista de navegação */
+nav li {
+    font-family: Arial; /* estilo da fonte */
+    font-size: 20px; /* tamanho da fonte */
+    margin: 0 50px 0 0;/* margem pra baixo de 50 pixels */
+    display: inline-block; /* quebra a linha da li fazendo uma do lado da outra */
+}
+
+/* Estilo para os links de navegação */
+nav a {
+    text-decoration: none; /* tira decoração do texto */
+    color: black; /* coloca cor preta */
+}
+
+/* Estilo para o botão na barra de navegação */
+.botao {
+    background-color: rgb(79, 155, 98);/* cor do fundo */
+    border-radius: 10px;/* curvatura da borda */
+    padding: 6px 20px;/*distacia pra cima 6 px pro lado 20 px */
+    border: 2px solid rgb(79, 155, 98);/* crio uma borda com 2 pixel de largura solida e verde no rgb*/
+}
+
+/* Quando o mouse passar por cima  */
+nav .botao:hover {
+    border: 2px solid rgb(186, 253, 84);/* crio uma borda com 2 pixel de largura solida e verde no rgb*/
+    background-color: rgb(186, 253, 84);/* cor do fundo do botão*/
+    color: white;/* letra branca */
+    text-decoration: underline;/* sublinhado*/
+}
+
+/* Outros estilos para links e botões */
+.branco {
+    color: white;/* cor da letra branca*/
+}
+/*quando o mouse ppassar por cima */
+nav .branco:hover {
+    color: white;/* cor da letra branca*/
+}
+/*quando o mouse ppassar por cima */
+nav a:hover {
+    color: rgb(164, 253, 31);/* cor da letra verde */
+    text-decoration: underline;/*sublinhado*/
+}
+
+/** ------------------ HEADER PRA BAIXO---------------------------**/
+
+/* Adiciona espaço acima do conteúdo principal */
+main {
+    padding-top: 8%;/* distancia ed cima */
+}
+
+/* Estilos para o segundo nível de títulos (h2) */
+h2 {
+    padding-bottom: 8%;/* distancia ed baixo */
+    font-style: italic;/* estio da fonte*/
+    font-size: 35px;/*tamanho da fonte*/
+    color: black;/*cor da fonte*/
+    text-align: center;/* texto ao centro*/
+}
+
+/* Estilo para o título h2 no hover */
+main h2:hover {
+    font-size: 45px;/*tamanho da fonte*/
+    color: rgb(134, 204, 151);/* cor da fonte*/
+}
+
+/* Estilo para elementos com a classe "sobre" */
+.sobre {
+    font-style: italic;/*estilo da fonte*/
+    font-size: 25px;/*tamanho da fonte*/
+    padding-top: 50px;/*ditancia de cima*/
+    text-align: center;/*texto ao centro*/
+}
+
+/* Estilos para as caixas que contêm informações */
+.caixas {
+    padding-bottom: 1.5%;/*distacia de baixo*/
+    margin-top: 5%;/*margem de cima*/
+    display: flex;/* quebrar o display para deixas as coisas lado a lado */
+    justify-content: space-between;/*espaço entre itens*/
+}
+
+/* Estilos para as caixas individuais (caixa1, caixa2, caixa3) */
+.caixa1,
+.caixa2,
+.caixa3 {
+    color: green;/*cor da fonte*/
+    border-radius: 10px;/*curvatura da borda*/
+    padding: 30px;/*distacia para todos os lados*/
+    background-image: url(teste.webp);/*imagem do fundo*/
+    width: 700px;/*tamanho em pixels*/
+    border: 2px solid rgb(129, 202, 147);/* criando borda*/
+}
+
+/* Estilos para elementos <em> dentro das caixas */
+.caixa1 em,
+.caixa2 em,
+.caixa3 em {
+    font-weight: bold;/*fonte negrito*/
+    color: black;/*cor da foonte preta*/
+}
+
+/* Estilos para os títulos dentro das caixas */
+.titulo-quadro1,
+.titulo-quadro2,
+.titulo-quadro3 {
+    font-weight: bold;/*font negrita*/
+    color: black;/*cor preta*/
+    font-size: 23px;/*tamanho da fonte */
+    padding-right: 10%;/*padding da diretia*/
+    text-align: center;/*texto a ocentro*/
+}
+
+/* Estilos para os parágrafos dentro das caixas */
+.paragrafo1,
+.paragrafo2,
+.paragrafo3 {
+    padding-top: 10px;/*margem de cima */
+    font-size: 20px;/*tamanho da fonte*/
+}
+
+/* Estilo para a imagem com o ID "macaco" */
+#macaco {
+    padding-left: 5%;/*distancia da esquerda */
+    padding-top: 30px;/*distancia de cima */
+    width: 400px;/*tamanho da imagem*/
+}
+
+/* Estilos para os títulos das qualidades */
+.titulos-qualidades {
+    font-size: 20px;/*tamanho da fonte*/
+    font-weight: bold;/*fonte negrita*/
+    padding-right: 25%;/*distancia da direita*/
+    color: black;/* cor preta*/
+    text-align: center;/*textos ao centro*/
+}
+
+/* Estilos para as qualidades intuitivas */
+.qualidades-intuicao {
+    font-weight: bold;/*fonte negrita*/
+    color: rgb(2, 77, 2);/* corta da fonte*/
+    text-align: center;/*texto ao entro*/
+    padding-right: 10%;/*distacia da direita*/
+    font-size: 16px;/*tamanho da fonte*/
+}
+
+/* Estilos para a lista dentro do elemento com a classe "intuitivo" */
+.intuitivo li {
+    padding-top: 3%;/*ditancia de cima*/
+    display: inline-block;/*quebrando a lista */
+}
+
+/* Estilos para o rodapé */
+footer {
+    text-align: center;/* texto no centro */
+    font-style: italic;/* estilo da fonte*/
+    font-weight: bold;/* deixa inegrito*/
+    font-size: 30px; /* tamanho da fonte 30 pixels*/
+    border-radius: 2.5%;/* curvatura da borda*/
+    background-color: rgb(4, 192, 4);/* cor do fundo */
+    width: 1384px;/* tamanho em pixels*/
+    padding: 80px;/* distacia de 80 px */
+    background-image: url(fundo-verde.jpg);/* linkagem do arq img no css*/
+}
+
+/* Estilo para o nome no rodapé */
+.roda-pe-nome {
+    font-size: 20px;/*tamanho da fonte*/
+}
+
+/* Estilo para o texto "salvem-nos" */
+.salvem-nos {
+    font-size: 15px;
+}

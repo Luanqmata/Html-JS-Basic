@@ -1,0 +1,86 @@
+#p-box {
+    border: 3px solid #000;
+    padding: 15px 20px;
+    background-color: #2C2B2B;
+
+
+   /* background-image: url(bolhas-black.jpg);
+    background-repeat: no-repeat;               
+    background-size: cover;
+                                    ficou feia a imagem com pixel feio se quiser arrumar só apagar esses 3 ou remover msm */
+
+}
+#box-box{
+    border: 3px solid #000;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+h1{  
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: #DCDCE3;
+    text-align: center;
+    font-size: 40px;
+}
+p{
+    font-family: "Almarai", sans-serif;
+    font-weight: 150;
+    font-style: normal;
+    padding-top: 5px;
+    text-align: center;
+    color: #DCDCE3;
+    font-size: 25px;
+}
+#usuario{
+    padding-top: 10px;
+    padding-left: 50px;
+}
+#senha{
+    padding-top: 26px;
+    padding-left: 50px;
+}
+input{
+    padding-left: 15px;
+    color: #DCDCE3;
+    padding-top: 12px;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding-right:85% ;
+    padding-bottom: 10px;
+    background-color: #2C2B2B;
+}
+#usuario input::placeholder{
+    font-family: "Almarai", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    padding-left: 25px;
+    color:#DCDCE3;
+    font-size: 19px;
+}
+#senha input::placeholder{
+    font-family: "Almarai", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    padding-left: 25px;
+    color:#DCDCE3;
+    font-size: 19px;
+}
+#botao{
+    padding-top: 35px;
+    padding-bottom: 35px;
+    text-align: center;
+}
+button{
+    text-decoration: none;
+    background-color: #2C2B2B;
+    padding: 12px 108px;
+
+    font-family: "Almarai", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: #DCDCE3;
+    font-size: 25px;
+}
+
