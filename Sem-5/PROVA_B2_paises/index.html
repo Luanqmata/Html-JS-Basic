@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Países do Mundo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- CSS Personalizado -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+<div class="container py-4">
+  <h1 class="text-center mb-4">🌍 Lista de Países</h1>
+
+  <div class="d-flex justify-content-center mb-3">
+    <button id="limpar-filtros-btn" class="btn btn-warning">Limpar filtros</button>
+  </div>
+
+  <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-2 mb-4">
+    <input type="text" id="busca" class="form-control" placeholder="🔍 Buscar por nome">
+    <input type="text" id="busca-moeda" class="form-control" placeholder="💰 Buscar por moeda">
+    <select id="continente" class="form-select">
+      <option value="">🌐 Todos os continentes</option>
+      <option value="Africa">África</option>
+      <option value="Americas">Américas</option>
+      <option value="Asia">Ásia</option>
+      <option value="Europe">Europa</option>
+      <option value="Oceania">Oceania</option>
+    </select>
+  </div>
+
+  <div id="paises-container" class="row gy-4 justify-content-center">
+    <p class="text-center">Carregando...</p>
+  </div>
+
+  <div class="d-flex justify-content-center my-4 gap-2">
+  <button id="inicio-btn" class="btn btn-primary">Ir para o início</button>
+  <button id="prev-btn" class="btn btn-secondary">Anterior</button>
+  <button id="next-btn" class="btn btn-secondary">Próximo</button>
+</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="paisModal" tabindex="-1" aria-labelledby="paisModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="paisModalLabel">Detalhes do País</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body" id="modal-content-body">
+        <!-- Detalhes do país aqui -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- JS Personalizado -->
+<script src="script.js"></script>
+</body>
+</html>

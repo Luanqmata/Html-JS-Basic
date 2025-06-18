@@ -1,0 +1,28 @@
+.modal-content {
+  background-color: #f0f8ff !important;
+}
+
+.flag-img {
+  width: 100%;
+  height: auto;
+  border: 2px solid #dee2e6;
+  margin-bottom: 10px;
+  display: block;
+  max-width: 150px;
+}
+.card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+.form-control,
+.form-select {
+  max-width: 400px;
+  margin: 10px auto;
+}
+
